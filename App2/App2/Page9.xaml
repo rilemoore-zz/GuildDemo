@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Page9"
+             BackgroundColor="PapayaWhip"
+             Title="My Profile">
+    <ContentPage.Content  BackgroundColor="PapayaWhip">
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PapayaWhip">
+            <Label 
+                Text="Player Profile"
+                TextColor="Brown"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Placeholder="Sign in with Google Email"
+                PlaceholderColor="Goldenrod"
+                BackgroundColor="#2c3e50"
+                MaxLength="100" 
+                WidthRequest="250" />
+            <Entry
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Placeholder="Password"
+                PlaceholderColor="Goldenrod"
+                BackgroundColor="#2c3e50"
+                MaxLength="100" 
+                WidthRequest="250" />
+            <Button Text="Sign in" Clicked="Handle_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Page1"
+              BackgroundColor="PapayaWhip"
+             Title="Main Menu"
+             >
+    <ContentPage.Content  BackgroundColor="PapayaWhip">
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PapayaWhip">
+            <Label 
+                Text="Welcome to the Guild"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                TextColor="Brown"/>
+            <Button Text="Manage Events" Clicked="Handle_Clicked"></Button>
+            <Button Text="Tools" Clicked="Handle_Clicked2"></Button>
+            <Button Text="My Calendar" Clicked="Handle_Clicked3"></Button>
+            <Button Text="Profile Settings" Clicked="Handle_Clicked4"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

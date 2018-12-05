@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Page7"
+             BackgroundColor="PapayaWhip"
+             Title="Event Creation">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PapayaWhip">
+            <Label 
+                Text="Create Event"
+                
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" 
+                TextColor="Brown"/>
+            <Entry
+                VerticalOptions="Start"
+                HorizontalOptions="Start"
+                Placeholder="Enter Event Name"
+                PlaceholderColor="Goldenrod"
+                BackgroundColor="#2c3e50"
+                MaxLength="500" 
+                WidthRequest="500" />
+            <Entry
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Placeholder="Enter Event Description"
+                PlaceholderColor="Goldenrod"
+                BackgroundColor="#2c3e50"
+                MaxLength="500" 
+                WidthRequest="500" />
+            <DatePicker
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                />
+
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+            <Entry
+                
+                Placeholder="End time"
+                PlaceholderColor="Goldenrod"
+                BackgroundColor="#2c3e50"
+                MaxLength="100" 
+                WidthRequest="100" />
+                
+            <Entry
+
+                Placeholder="Start time"
+                PlaceholderColor="Goldenrod"
+                BackgroundColor="#2c3e50"
+                MaxLength="100" 
+                WidthRequest="100" />
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+   
+</ContentPage>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Page13"
+             BackgroundColor="PapayaWhip"
+             Title="Find Events">
+
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="PapayaWhip">
+            <Label Text="Find Events"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" />
+            <Entry
+                VerticalOptions="Start"
+                HorizontalOptions="Start"
+                Placeholder="Enter Event Name"
+                PlaceholderColor="Goldenrod"
+                BackgroundColor="#2c3e50"
+                MaxLength="500" 
+                WidthRequest="500" />
+            <Entry
+                VerticalOptions="Start"
+                HorizontalOptions="Start"
+                Placeholder="Enter Organizer Name"
+                PlaceholderColor="Goldenrod"
+                BackgroundColor="#2c3e50"
+                MaxLength="500" 
+                WidthRequest="500" />
+            <Entry
+                VerticalOptions="Start"
+                HorizontalOptions="Start"
+                Placeholder="Enter Game Type"
+                PlaceholderColor="Goldenrod"
+                BackgroundColor="#2c3e50"
+                MaxLength="500" 
+                WidthRequest="500" />
+            <DatePicker
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                />
+            <Label Text="-"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" />
+            <DatePicker
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                />
+            <Button Text="Search" Clicked="Handle_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
