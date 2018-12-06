@@ -15,6 +15,7 @@ namespace App2
 		public Page6 ()
 		{
 			InitializeComponent ();
-		}
+            this.BackgroundImage = "smallbackground.png";
+        }
 	}
 }

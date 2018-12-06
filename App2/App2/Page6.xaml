@@ -2,10 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.Page6"
-             BackgroundColor="PapayaWhip"
+             BackgroundColor="Transparent"
              Title="LAN Gaming">
+    
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PapayaWhip">
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
             <Label 
                 Text="LAN Game Tools"
                 TextColor="Brown"

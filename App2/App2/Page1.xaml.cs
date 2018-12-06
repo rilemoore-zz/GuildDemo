@@ -15,8 +15,15 @@ namespace App2
 		public Page1 ()
 		{
 			InitializeComponent ();
-		}
+            this.BackgroundImage = "smallbackground.png";
 
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            this.Title.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.Chocolate;
+        }
         void Handle_Clicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new Page2());

@@ -15,10 +15,11 @@ namespace App2
 		public Page9 ()
 		{
 			InitializeComponent ();
-		}
+            this.BackgroundImage = "smallbackground.png";
+        }
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new Page2());
+            Navigation.PushAsync(new Page1());
         }
     }
 }

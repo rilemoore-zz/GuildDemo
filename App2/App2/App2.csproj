@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Class1.cs" />
     <Compile Remove="Page10.xaml.cs" />
   </ItemGroup>
 
@@ -18,14 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="lmao.PNG" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="lmao.PNG" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="Telerik.UI.for.Xamarin.Trial" Version="2018.3.1122.3" />
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
   </ItemGroup>
 

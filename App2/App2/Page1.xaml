@@ -6,16 +6,44 @@
              Title="Main Menu"
              >
     <ContentPage.Content  BackgroundColor="PapayaWhip">
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PapayaWhip">
-            <Label 
-                Text="Welcome to the Guild"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center"
-                TextColor="Brown"/>
-            <Button Text="Manage Events" Clicked="Handle_Clicked"></Button>
-            <Button Text="Tools" Clicked="Handle_Clicked2"></Button>
-            <Button Text="My Calendar" Clicked="Handle_Clicked3"></Button>
-            <Button Text="Profile Settings" Clicked="Handle_Clicked4"></Button>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent" Orientation="Vertical" Opacity="1">
+            <Label Text="Welcome to the Guild" HorizontalOptions="Center" TextColor="brown" x:Name="Title" BackgroundColor="Transparent" HeightRequest="100">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <Button Text="Manage Events" Clicked="Handle_Clicked" CornerRadius="50" BackgroundColor="Brown" Opacity="1">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+            <Button Text="Tools" Clicked="Handle_Clicked2" CornerRadius="50" BackgroundColor="AliceBlue">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Button.FontFamily>                
+            </Button>
+
+            <Button Text="My Calendar" Clicked="Handle_Clicked3" CornerRadius="50" BackgroundColor="AliceBlue">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+            <Button Text="Profile Settings" Clicked="Handle_Clicked4" CornerRadius="50" BackgroundColor="AliceBlue">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

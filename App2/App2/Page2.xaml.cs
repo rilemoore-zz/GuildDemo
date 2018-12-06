@@ -15,7 +15,9 @@ namespace App2
 		public Page2 ()
 		{
 			InitializeComponent ();
-		}
+            this.BackgroundImage = "smallbackground.png";
+            this.Title.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
+        }
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {

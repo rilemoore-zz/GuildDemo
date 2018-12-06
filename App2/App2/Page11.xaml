@@ -2,36 +2,150 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.Page11"
-             BackgroundColor="PapayaWhip"
+             BackgroundColor="Transparent"
              Title="Edit Event">
     
     <ContentPage.Content>
-        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="PapayaWhip">
+        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+        <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="PapayaWhip" >
             <Label Text="Edit Event"
                    TextColor="Brown"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Button Text="Casa De Gief 11/24/18" HorizontalOptions="Center"></Button>
-                <Button Text="Friday Night Magic 11/23/18" HorizontalOptions="Center"></Button>
-                <Button Text="NVE Monthly" HorizontalOptions="Center"></Button>
-                <Button Text="Break the Internet 2018" HorizontalOptions="Center"></Button>
-                <Button Text="Fall Frags" HorizontalOptions="Center"></Button>
-                <Button Text="Smash Ultimate Launch Party" HorizontalOptions="Center"></Button>
-                <Button Text="Fight for Atlantis 2" HorizontalOptions="Center"></Button>
-                <Button Text="Werewolf 11/25" HorizontalOptions="Center"></Button>
-                <Button Text="Critical Role 11/26" HorizontalOptions="Center"></Button>
-                <Button Text="Guilds of Ravnica Release" HorizontalOptions="Center"></Button>
-                <Button Text="Casa De Gief 11/24/18" HorizontalOptions="Center"></Button>
-                <Button Text="Friday Night Magic 11/23/18" HorizontalOptions="Center"></Button>
-                <Button Text="NVE Monthly" HorizontalOptions="Center"></Button>
-                <Button Text="Break the Internet 2018" HorizontalOptions="Center"></Button>
-                <Button Text="Fall Frags" HorizontalOptions="Center"></Button>
-                <Button Text="Smash Ultimate Launch Party" HorizontalOptions="Center"></Button>
-                <Button Text="Fight for Atlantis 2" HorizontalOptions="Center"></Button>
-                <Button Text="Werewolf 11/25" HorizontalOptions="Center"></Button>
-                <Button Text="Critical Role 11/26" HorizontalOptions="Center"></Button>
-                <Button Text="Guilds of Ravnica Release" HorizontalOptions="Center"></Button>
+                <Button Text="Friday Night Magic 11/23/18" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="NVE Monthly" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Break the Internet 2018" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Fall Frags" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Smash Ultimate Launch Party" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Fight for Atlantis 2" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Werewolf 11/25" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Critical Role 11/26" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Guilds of Ravnica Release" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Casa De Gief 11/24/18" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Friday Night Magic 11/23/18" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="NVE Monthly" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Break the Internet 2018" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Fall Frags" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Smash Ultimate Launch Party" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Fight for Atlantis 2" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Werewolf 11/25" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Critical Role 11/26" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button Text="Guilds of Ravnica Release" HorizontalOptions="Center">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

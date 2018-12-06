@@ -11,7 +11,7 @@ namespace App2
         {
             InitializeComponent();
             //MainPage = new LocalCalendar();
-            MainPage = new NavigationPage(new Page1());
+            MainPage = new NavigationPage(new SplashScreen());
         }
 
         protected override void OnStart()

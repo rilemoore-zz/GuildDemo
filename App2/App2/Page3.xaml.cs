@@ -15,7 +15,8 @@ namespace App2
 		public Page3 ()
 		{
 			InitializeComponent ();
-		}
+            this.BackgroundImage = "smallbackground.png";
+        }
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {

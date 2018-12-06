@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.Page4"
-             BackgroundColor="PapayaWhip"
+             BackgroundColor="Transparent"
              Title="DND">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PapayaWhip">
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
             <Label 
                 Text="DnD Tools"
                 TextColor="Brown"
