@@ -69,7 +69,7 @@ def jsfile():
                 'User ID':items[1],
                 'Event Title':items[2],
                 'Event Game':items[3],
-                'Event Data':items[4],
+                'Event Date':items[4],
                 'Start Time':items[5],
                 'End Time':items[6],
                 'Number Of Players': items[7],
