@@ -5,7 +5,7 @@ mydb = mysql.connector.connect(
     host = #AWS endpoint,
     user = #Master Username,
     passwd = #Password,
-   database = #Database,
+    database = #Database,
     port = #Port Number
 )
 #This Code will not function without the proper host, user, passwd, database, and port inputted properly
