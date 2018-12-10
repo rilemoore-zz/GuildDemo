@@ -17,7 +17,7 @@ app = Flask(__name__)
 #dbCon = None
 @app.route("/")
 def hello():
-        return "This is a Blank Page with no Data"
+        return "Welcome to the Guild"
 
 @app.route("/events")
 def events():
@@ -33,8 +33,8 @@ def events():
                 events.append(items)
         return json.dumps(events)
 
-@app.route("/jsfile")
-def jsfile():
+@app.route("/events/get")
+def getEvents():
         empList = []
         mycursor.execute("SELECT * FROM Events")
         for x in mycursor:
