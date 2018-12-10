@@ -2,34 +2,22 @@ import mysql.connector
 import json
 
 mydb = mysql.connector.connect(
-    host = #AWS endpoint,
-    user = #Master Username,
-    passwd = #Password,
-    database = #Database,
-    port = #Port Number
+    host = 'AWS endpoint',
+    user = 'MasterUsername',
+    passwd = 'Password123',
+   database = 'ADatabase',
+    port = '3306'
 )
 #This Code will not function without the proper host, user, passwd, database, and port inputted properly
-#Missing data for security reasons
 
 mycursor = mydb.cursor()
-#mycursor.execute("SHOW DATABASES")
-#for x in mycursor:
-#       print(x)
-
-#mycursor.execute("SHOW TABLES")
-#for x in mycursor:
-#       print(x)
-
-#mycursor.execute("SELECT * FROM Events")
-#for y in mycursor:
-#       print(y)
 
 from flask import Flask
 app = Flask(__name__)
 #dbCon = None
 @app.route("/")
 def hello():
-        return "Hello, World!"
+        return "This is a Blank Page with no Data"
 
 @app.route("/events")
 def events():
@@ -44,14 +32,6 @@ def events():
                         items.append(item)
                 events.append(items)
         return json.dumps(events)
-
-@app.route("/test")
-def test():
-        test = {}
-        test["foo"] = 1
-        test["bar"] = "Hello World"
-#       test[{"User_ID":zip(*events)[0]}] = 5
-        return json.dumps(test)
 
 @app.route("/jsfile")
 def jsfile():
@@ -81,6 +61,5 @@ def jsfile():
         return json.dumps(empList)
 
 if __name__ == "__main__":
-        #dbCon = mysql.connector...
-        app.run(debug=True, host = '<ip address>', port = #Port Number)
-        #A real ip address has to be inputted at <ip address>
+        app.run(debug=True, host = '0.0.0.0', port = 3306)
+        #Port number used here is not used for Guild
