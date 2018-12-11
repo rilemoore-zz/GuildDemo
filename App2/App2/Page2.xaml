@@ -6,42 +6,36 @@
              Title="Event Manager">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
-            <Label Text="Manage Events" HorizontalOptions="Center" x:Name="Title" >
+            <Label Text="Manage Events" HorizontalOptions="Center" x:Name="Title" TextColor="#38393a" >
                 <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
                     </OnPlatform>
                 </Label.FontFamily>
             </Label>
-            <Button Text="Create Event" Clicked="Handle_Clicked" >
+            <Button Text="Create Event" Clicked="Handle_Clicked" BackgroundColor="#d1eefc"  CornerRadius="50">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                     </OnPlatform>
                 </Button.FontFamily>
             </Button>
-            <Button Text="Delete Event" Clicked="Handle_Clicked3">
+
+            <Button Text="My Events" Clicked="Handle_Clicked4" BackgroundColor="#d1eefc" CornerRadius="50">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                     </OnPlatform>
                 </Button.FontFamily>
             </Button>
-            <Button Text="Edit Event" Clicked="Handle_Clicked4">
+            <Button Text="Search Public Events" Clicked="Handle_Clicked5" BackgroundColor="#d1eefc" CornerRadius="50">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                     </OnPlatform>
                 </Button.FontFamily>
             </Button>
-            <Button Text="Search Public Events" Clicked="Handle_Clicked5">
-                <Button.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
-                    </OnPlatform>
-                </Button.FontFamily>
-            </Button>
-            <Button Text="Back to Menu" Clicked="Handle_Clicked2">
+            <Button Text="Back to Menu" Clicked="Handle_Clicked2" BackgroundColor="#d1eefc" CornerRadius="50">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>

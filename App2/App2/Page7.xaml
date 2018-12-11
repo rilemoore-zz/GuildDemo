@@ -7,48 +7,69 @@
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
             <Label 
-                Text="Create Event"
-                
+                x:Name="Title"
+                Text="Event Creation"
+                HeightRequest="100"
                 VerticalOptions="Start" 
                 HorizontalOptions="Center" 
-                TextColor="Brown"/>
+                TextColor="#38393a">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
             <Entry
+                HorizontalTextAlignment="Center"
                 VerticalOptions="Start"
                 HorizontalOptions="Start"
                 Placeholder="Enter Event Name"
-                PlaceholderColor="Goldenrod"
-                BackgroundColor="#2c3e50"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
                 MaxLength="500" 
-                WidthRequest="500" />
-            <Entry
+                WidthRequest="500" 
+                />
+            <Entry               
+                HorizontalTextAlignment="Center"
                 VerticalOptions="Start"
                 HorizontalOptions="Center"
                 Placeholder="Enter Event Description"
-                PlaceholderColor="Goldenrod"
-                BackgroundColor="#2c3e50"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
                 MaxLength="500" 
                 WidthRequest="500" />
             <DatePicker
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
+                TextColor="#A00000"
                 />
 
             <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
             <Entry
                 
-                Placeholder="End time"
-                PlaceholderColor="Goldenrod"
-                BackgroundColor="#2c3e50"
+                Placeholder="Start Time"
+                PlaceholderColor="#A00000"
+                HorizontalTextAlignment="Center"
+                BackgroundColor="Transparent"
                 MaxLength="100" 
                 WidthRequest="100" />
                 
             <Entry
 
-                Placeholder="Start time"
-                PlaceholderColor="Goldenrod"
-                BackgroundColor="#2c3e50"
+                Placeholder="End Time"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
+                HorizontalTextAlignment="Center"
                 MaxLength="100" 
-                WidthRequest="100" />
+                WidthRequest="100"
+                Keyboard="Numeric"/>
+                <Button Text="Create Event" Clicked="Handle_Clicked" CornerRadius="50" BackgroundColor="#d1eefc" Opacity="1">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
             </StackLayout>
 
 

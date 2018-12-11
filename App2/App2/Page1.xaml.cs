@@ -14,6 +14,7 @@ namespace App2
 	{
 		public Page1 ()
 		{
+            
 			InitializeComponent ();
             this.BackgroundImage = "smallbackground.png";
 
@@ -22,7 +23,7 @@ namespace App2
         {
             base.OnAppearing();
             this.Title.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
-            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.Chocolate;
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.Brown;
         }
         void Handle_Clicked(object sender, System.EventArgs e)
         {

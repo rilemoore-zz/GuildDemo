@@ -7,33 +7,39 @@
     
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
-            <Label 
+            <Label
                 Text="Tools"
-                TextColor="Brown"
+                TextColor="#38393a"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Dungeons and Dragons" Clicked="Handle_Clicked">
+                HorizontalOptions="CenterAndExpand">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <Button Text="Dungeons and Dragons" Clicked="Handle_Clicked" CornerRadius="50" BackgroundColor="#d1eefc">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                     </OnPlatform>
                 </Button.FontFamily>
             </Button>
-            <Button Text="Card Games" Clicked="Handle_Clicked2">
+            <Button Text="Card Games" Clicked="Handle_Clicked2" CornerRadius="50" BackgroundColor="#d1eefc">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                     </OnPlatform>
                 </Button.FontFamily>
             </Button>
-            <Button Text="Lan Games" Clicked="Handle_Clicked4">
+            <Button Text="Lan Games" Clicked="Handle_Clicked4" CornerRadius="50" BackgroundColor="#d1eefc">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                     </OnPlatform>
                 </Button.FontFamily>
             </Button>
-            <Button Text="Back to Menu" Clicked="Handle_Clicked3">
+            <Button Text="Back to Menu" Clicked="Handle_Clicked3" CornerRadius="50" BackgroundColor="#d1eefc">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>

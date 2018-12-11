@@ -3,35 +3,45 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.Page13"
              BackgroundColor="Transparent"
-             Title="Find Events">
+             Title="Find Public Events">
 
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="PapayaWhip">
-            <Label Text="Find Events"
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
+            <Label Text="Enter Search criteria"
+                x:Name="Title" 
                 VerticalOptions="Start" 
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
             <Entry
-                VerticalOptions="Start"
+                VerticalOptions="Center"
                 HorizontalOptions="Start"
                 Placeholder="Enter Event Name"
-                PlaceholderColor="Goldenrod"
-                BackgroundColor="#2c3e50"
+                HorizontalTextAlignment="Center"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
                 MaxLength="500" 
                 WidthRequest="500" />
             <Entry
-                VerticalOptions="Start"
+                VerticalOptions="Center"
                 HorizontalOptions="Start"
                 Placeholder="Enter Organizer Name"
-                PlaceholderColor="Goldenrod"
-                BackgroundColor="#2c3e50"
+                HorizontalTextAlignment="Center"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
                 MaxLength="500" 
                 WidthRequest="500" />
             <Entry
-                VerticalOptions="Start"
+                VerticalOptions="Center"
                 HorizontalOptions="Start"
                 Placeholder="Enter Game Type"
-                PlaceholderColor="Goldenrod"
-                BackgroundColor="#2c3e50"
+                HorizontalTextAlignment="Center"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
                 MaxLength="500" 
                 WidthRequest="500" />
             <DatePicker

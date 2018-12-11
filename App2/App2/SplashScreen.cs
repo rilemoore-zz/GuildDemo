@@ -16,7 +16,7 @@ namespace App2
             var sub = new AbsoluteLayout();
             splashImage = new Image
             {
-                Source = "hat.png",
+                Source = "GuildLogo1.png",
                 WidthRequest = 250,
                 HeightRequest = 250,
             };
@@ -24,7 +24,7 @@ namespace App2
             AbsoluteLayout.SetLayoutBounds(splashImage, new Rectangle(0.5, 0.5, AbsoluteLayout.AutoSize, AbsoluteLayout.AutoSize));
 
             sub.Children.Add(splashImage);
-            this.BackgroundColor = Color.FromHex("#5E6168");
+            this.BackgroundColor = Color.FromHex("#D1B48C");
             this.Content = sub;
         }
 

@@ -17,6 +17,11 @@ namespace App2
 			InitializeComponent ();
             this.BackgroundImage = "smallbackground.png";
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            this.Title.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
+        }
         void Handle_Clicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new Page13());

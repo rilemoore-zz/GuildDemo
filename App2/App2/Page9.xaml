@@ -3,31 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.Page9"
              BackgroundColor="Transparent"
+             NavigationPage.HasNavigationBar="False"
              Title="My Profile">
     <ContentPage.Content  BackgroundColor="PapayaWhip">
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
             <Label 
-                Text="Player Profile"
+                x:Name="Title" 
+                Text="Login"
                 TextColor="Brown"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
             <Entry
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
-                Placeholder="Sign in with Google Email"
-                PlaceholderColor="Goldenrod"
-                BackgroundColor="#2c3e50"
+                Placeholder="Username"
+                HorizontalTextAlignment="Center"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
                 MaxLength="100" 
-                WidthRequest="250" />
+                WidthRequest="250"
+                Keyboard="Email" />
             <Entry
-                VerticalOptions="Center"
+                VerticalOptions="Center"                
                 HorizontalOptions="Center"
                 Placeholder="Password"
-                PlaceholderColor="Goldenrod"
-                BackgroundColor="#2c3e50"
+                HorizontalTextAlignment="Center"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
                 MaxLength="100" 
                 WidthRequest="250" />
-            <Button Text="Sign in" Clicked="Handle_Clicked">
+            <Button Text="Sign in" Clicked="Handle_Clicked" CornerRadius="50">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>
