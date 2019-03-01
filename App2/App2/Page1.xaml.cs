@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using FormsControls.Base;
 
 namespace App2
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Page1 : ContentPage
+	public partial class Page1 : ContentPage, IAnimationPage
 	{
 		public Page1 ()
 		{
@@ -22,9 +23,23 @@ namespace App2
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            
             this.Title.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
             ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.Brown;
         }
+
+        public IPageAnimation PageAnimation { get; } = new FadePageAnimation { Duration = AnimationDuration.Short, Subtype = AnimationSubtype.FromTop };
+
+        public void OnAnimationStarted(bool isPopAnimation)
+        {
+            // Put your code here but leaving empty works just fine
+        }
+
+        public void OnAnimationFinished(bool isPopAnimation)
+        {
+            // Put your code here but leaving empty works just fine
+        }
+
         void Handle_Clicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new Page2());

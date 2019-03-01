@@ -11,6 +11,14 @@
                 TextColor="Brown"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button
+                Text="Yu-gi-oh"
+                Clicked="Handle_Clicked"
+                />
+            <Button
+                Text="Magic the Gathering"
+                Clicked="Handle_Clicked2"
+                />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

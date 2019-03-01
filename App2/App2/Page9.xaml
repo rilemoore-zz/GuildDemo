@@ -20,8 +20,10 @@
                 </Label.FontFamily>
             </Label>
             <Entry
+                x:Name="Entry_Username"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
+                Text=""
                 Placeholder="Username"
                 HorizontalTextAlignment="Center"
                 PlaceholderColor="#A00000"
@@ -30,6 +32,8 @@
                 WidthRequest="250"
                 Keyboard="Email" />
             <Entry
+                x:Name="Entry_Password"
+                Text=""
                 VerticalOptions="Center"                
                 HorizontalOptions="Center"
                 Placeholder="Password"
@@ -38,7 +42,7 @@
                 BackgroundColor="Transparent"
                 MaxLength="100" 
                 WidthRequest="250" />
-            <Button Text="Sign in" Clicked="Handle_Clicked" CornerRadius="50">
+            <Button x:Name="Btn_Signin" Text="Sign in" Clicked="Handle_Clicked" CornerRadius="50">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>

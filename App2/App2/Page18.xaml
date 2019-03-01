@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Page18">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text=""
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Entry x:Name="P1Life" Grid.Row="0" Grid.Column="0" Text="8000" />
+                <Entry x:Name="P1Mod" Grid.Row="0" Grid.Column="1" Placeholder="Subtract/add" Text="0" Keyboard="Numeric"/>
+                <Entry x:Name="P2Life" Grid.Row="1" Grid.Column="0" Text="8000" />
+                <Entry x:Name="P2Mod" Grid.Row="1" Grid.Column="1" Placeholder="Subtract/add" Text="0" Keyboard="Numeric" />
+                <Button Grid.Row="2" Grid.Column="1" Text="Calculate" Clicked="Calc" />
+
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

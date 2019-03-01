@@ -10,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace App2
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Page8 : ContentPage, IAnimationPage
+	public partial class Page18 : ContentPage, IAnimationPage
     {
-		public Page8 ()
-		{
-			InitializeComponent ();
+        public Page18()
+        {
+            InitializeComponent();
             this.BackgroundImage = "smallbackground.png";
         }
 
@@ -30,5 +30,26 @@ namespace App2
             // Put your code here but leaving empty works just fine
         }
 
+        private void Calc(object sender, EventArgs e)
+        {
+            if(P1Mod.Text=="" )
+            {
+                P1Mod.Text = "0";
+            }
+            if (P2Mod.Text == "")
+            {
+                P2Mod.Text = "0";
+            }
+            int x = Int32.Parse(P1Life.Text);
+            int y = Int32.Parse(P2Life.Text);
+            int a = Int32.Parse(P1Mod.Text);
+            int b = Int32.Parse(P2Mod.Text);
+            x = x + a;
+            y = y + b;
+            P1Life.Text = x.ToString();
+            P2Life.Text = y.ToString();
+            P1Mod.Text = "0";
+            P2Mod.Text = "0";
+        }
     }
 }

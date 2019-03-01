@@ -12,6 +12,10 @@
                 TextColor="Brown"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button
+                Text="Smash Ultimate Stage Striker"
+                Clicked="Handle_Clicked"
+                />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

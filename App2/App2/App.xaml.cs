@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using FormsControls.Base;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace App2
@@ -11,7 +12,7 @@ namespace App2
         {
             InitializeComponent();
             //MainPage = new LocalCalendar();
-            MainPage = new NavigationPage(new SplashScreen());
+            MainPage = new AnimationNavigationPage(new SplashScreen());
         }
 
         protected override void OnStart()

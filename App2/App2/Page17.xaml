@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Page17">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Initiative Tracker"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Entry Grid.Row="0" Grid.Column="0" Placeholder="Player 1" />
+                <Entry x:Name="Init1" Grid.Row="0" Grid.Column="1" Placeholder="Initiative" />
+                <Entry Grid.Row="1" Grid.Column="0" Placeholder="Player 2" />
+                <Entry x:Name="Init2" Grid.Row="1" Grid.Column="1" Placeholder="Initiative" />
+                <Entry Grid.Row="2" Grid.Column="0" Placeholder="Player 3" />
+                <Entry x:Name="Init3" Grid.Row="2" Grid.Column="1" Placeholder="Initiative" />
+                <Entry Grid.Row="3" Grid.Column="0" Placeholder="Player 4" />
+                <Entry x:Name="Init4" Grid.Row="3" Grid.Column="1" Placeholder="Initiative" />
+                <Entry Grid.Row="4" Grid.Column="0" Placeholder="Player 5" />
+                <Entry x:Name="Init5" Grid.Row="4" Grid.Column="1" Placeholder="Initiative" />
+                <Entry Grid.Row="5" Grid.Column="0" Placeholder="Player 6" />
+                <Entry x:Name="Init6" Grid.Row="5" Grid.Column="1" Placeholder="Initiative" />
+                <Entry Grid.Row="6" Grid.Column="0" Placeholder="Player 7" />
+                <Entry x:Name="Init7" Grid.Row="6" Grid.Column="1" Placeholder="Initiative" />
+                <Entry Grid.Row="7" Grid.Column="0" Placeholder="Player 8" />
+                <Entry x:Name="Init8" Grid.Row="7" Grid.Column="1" Placeholder="Initiative" />
+                <Button Grid.Row="10" Grid.Column="1" Text="D20" Clicked="D20" />
+                <Button Grid.Row="10" Grid.Column="0" Text="Sort" Clicked="Sort" />
+
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

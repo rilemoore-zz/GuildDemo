@@ -3,24 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using FormsControls.Base;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using FormsControls.Base;
+
 namespace App2
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Page13 : ContentPage, IAnimationPage
+	public partial class Page15 : ContentPage, IAnimationPage
     {
-		public Page13 ()
-		{
-			InitializeComponent ();
-            this.BackgroundImage = "smallbackground.png";
-        }
-        protected override void OnAppearing()
+		public Page15 ()
         {
-            base.OnAppearing();
-            this.Title.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
+            InitializeComponent();
+            this.BackgroundImage = "smallbackground.png";
         }
 
         public IPageAnimation PageAnimation { get; } = new FadePageAnimation { Duration = AnimationDuration.Short, Subtype = AnimationSubtype.FromTop };
@@ -37,7 +32,11 @@ namespace App2
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new Page13());
+            Navigation.PushAsync(new Page4());
+        }
+        void Handle_Clicked2(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new Page17());
         }
     }
 }

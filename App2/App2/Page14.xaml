@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Page14"
+             BackgroundColor="Transparent"
+             Title="Stage Striker">
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+            <StackLayout  HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
+            <Label Text="Starter Stages"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="Transparent"/>
+            <Label 
+                x:Name="Banthingy"
+                Text="Strike in a 1-2-1 order"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="Transparent"/>
+                <Button
+                x:Name="BF"
+                Text="Battlefield"
+                Clicked="BF1"
+                />
+            <Button
+                x:Name="FD"
+                Text="Final Destination"
+                Clicked="FD1"
+                />
+            <Button
+                x:Name="SV"
+                Text="Smashville"
+                Clicked="SV1"
+                />
+            <Button
+                x:Name="PS2"
+                Text="Pokemon Stadium 2"
+                Clicked="PS21"
+                />
+            <Button
+                x:Name="LC"
+                Text="Lylat Cruise"
+                Clicked="LC1"
+                />
+            <Label Text="Counterpick Stages"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="Transparent"/>
+            <Label 
+                x:Name="counterpicks"
+                Text="Winner bans 2 stages"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="Transparent"/>
+            <Button
+                x:Name="CS"
+                Text="Castle Siege"
+                Clicked="CS1"
+                />
+            <Button
+                x:Name="Unova"
+                Text="Unova Pokemon League"
+                Clicked="Unova1"
+                />
+            <Button
+                x:Name="TC"
+                Text="Town and City"
+                Clicked="TC1"
+                />
+            <Button
+                x:Name="YS"
+                Text="Yoshi's Story"
+                Clicked="YS1"
+                />
+            <Button
+                x:Name="YI"
+                Text="Yoshi's Island Brawl"
+                Clicked="YI1"
+                />
+            <Button
+                x:Name="Kalos"
+                Text="Kalos Pokemon League"
+                Clicked="Kalos1"
+                />
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

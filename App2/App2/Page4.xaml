@@ -3,14 +3,109 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.Page4"
              BackgroundColor="Transparent"
-             Title="DND">
+             Title="Dice Rollers">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
-            <Label 
-                Text="DnD Tools"
+        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
+                <Label 
+                Text="Dice Rollers"
+                TextColor="Brown"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Button
+                x:Name="Roll_D20"
+                Text="D20"
                 TextColor="Brown"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+                HorizontalOptions="CenterAndExpand"
+                Clicked="D20"
+                />
+                <Button
+                x:Name="Roll_D2"
+                Text="D2"
+                TextColor="Brown"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                Clicked="D2"
+                />
+                <Button
+                x:Name="Roll_D3"
+                Text="D3"
+                TextColor="Brown"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                Clicked="D3"
+                />
+                <Button
+                x:Name="Roll_D4"
+                Text="D4"
+                TextColor="Brown"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                Clicked="D4"
+                />
+                <Button
+                x:Name="Roll_D6"
+                Text="D6"
+                TextColor="Brown"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                Clicked="D6"
+                />
+                <Button
+                x:Name="Roll_D8"
+                Text="D8"
+                TextColor="Brown"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                Clicked="D8"
+                />
+                <Button
+                x:Name="Roll_D10"
+                Text="D10"
+                TextColor="Brown"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                Clicked="D10"
+                />
+                <Button
+                x:Name="Roll_D12"
+                Text="D12"
+                TextColor="Brown"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                Clicked="D12"
+                />
+                <Button
+                x:Name="Roll_D100"
+                Text="D100"
+                TextColor="Brown"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                Clicked="D100"
+                />
+                <Entry
+                x:Name="Min"
+                Text=""
+                Placeholder="Enter a minimum"
+                Keyboard="Numeric"
+                />
+                <Button
+                x:Name="Roll_Custom"
+                Text="Roll Custom Dice"
+                TextColor="Brown"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                Clicked="Custom"
+                />
+                <Entry
+                x:Name="Max"
+                Text=""
+                Placeholder="Enter a maximum"
+                Keyboard="Numeric"
+                />
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
