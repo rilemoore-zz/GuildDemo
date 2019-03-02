@@ -84,19 +84,19 @@ namespace App2
             Init0.Text = list[0].initiative.ToString();
             Init0Name.Text = list[0].name;
             Init1.Text = list[1].initiative.ToString();
-            Init0Name.Text = list[1].name;
+            Init1Name.Text = list[1].name;
             Init2.Text = list[2].initiative.ToString();
-            Init0Name.Text = list[2].name;
+            Init2Name.Text = list[2].name;
             Init3.Text = list[3].initiative.ToString();
-            Init0Name.Text = list[3].name;
+            Init3Name.Text = list[3].name;
             Init4.Text = list[4].initiative.ToString();
-            Init0Name.Text = list[4].name;
+            Init4Name.Text = list[4].name;
             Init5.Text = list[5].initiative.ToString();
-            Init0Name.Text = list[5].name;
+            Init5Name.Text = list[5].name;
             Init6.Text = list[6].initiative.ToString();
-            Init0Name.Text = list[6].name;
+            Init6Name.Text = list[6].name;
             Init7.Text = list[7].initiative.ToString();
-            Init0Name.Text = list[7].name;
+            Init7Name.Text = list[7].name;
 
         }
     }

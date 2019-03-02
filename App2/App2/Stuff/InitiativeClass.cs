@@ -29,9 +29,13 @@ namespace App2.Stuff
 
         public void Swap(InitiativeClass a, InitiativeClass b)
         {
-            InitiativeClass temp = a;
-            a = b;
-            b = temp;
+            InitiativeClass temp = new InitiativeClass();
+            temp.initiative = a.initiative;
+            temp.name = a.name;
+            a.initiative = b.initiative;
+            a.name = b.name;
+            b.initiative = temp.initiative;
+            b.name = temp.name;
         }
     }
 }
