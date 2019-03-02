@@ -105,12 +105,18 @@ namespace App2
 
         private void Custom(object sender, System.EventArgs e)
         {
-            int num;           
-            int max = Int32.Parse(Max.Text);
-            int min = Int32.Parse(Min.Text);
-            Random random = new Random();
-            num = random.Next(min, max);
-            DisplayAlert("You Rolled a", num.ToString(), "Thank you dice roller");
+            if(Max.Text != "" && Min.Text != "")
+            {
+                int num;
+                int max = Int32.Parse(Max.Text);
+                int min = Int32.Parse(Min.Text);
+                if (max >= min)
+                {
+                    Random random = new Random();
+                    num = random.Next(min, max);
+                    DisplayAlert("You Rolled a", num.ToString(), "Thank you dice roller");
+                }
+            }
         }
     }
 }
