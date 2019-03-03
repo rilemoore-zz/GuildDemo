@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.Page19">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent">
             <Label Text=""
-                VerticalOptions="Start" 
+                VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Grid>
                 <Grid.RowDefinitions>
@@ -32,10 +32,10 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Entry x:Name="P1Life" Grid.Row="0" Grid.Column="1" Text="20" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                <Entry x:Name="P1Life" Grid.Row="0" Grid.Column="1" Text="20" HorizontalTextAlignment="Center" VerticalOptions="Center" Keyboard="Numeric" HeightRequest="250"/>
                 <Button x:Name="p1down" Grid.Row="0" Grid.Column="0"  Text="down" Clicked="P1Down" />
                 <Button x:Name="p1up" Grid.Row="0" Grid.Column="2"  Text="up" Clicked="P1Up" />
-                <Entry x:Name="P2Life" Grid.Row="10" Grid.Column="1" Text="20" HorizontalTextAlignment="Center" Keyboard="Numeric" />
+                <Entry x:Name="P2Life" Grid.Row="10" Grid.Column="1" Text="20" HorizontalTextAlignment="Center" Keyboard="Numeric" HeightRequest="250" />
                 <Button x:Name="p2down"  Grid.Row="10" Grid.Column="0"  Text="down" Clicked="P2Down" />
                 <Button x:Name="p2up" Grid.Row="10" Grid.Column="2"  Text="up" Clicked="P2Up" />
 

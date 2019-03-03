@@ -37,19 +37,24 @@ namespace App2
             // Put your code here but leaving empty works just fine
         }
 
-        void Handle_Clicked(object sender, System.EventArgs e)
+        async void Handle_Clicked(object sender, System.EventArgs e)
         {
             //if(!Entry_Username.Text.Equals("") && !Entry_Password.Text.Equals(""))
             
                 User user = new User(Entry_Username.Text, Entry_Password.Text);
                 if (user.CheckInfo())
                 {
-                    //DisplayAlert("Login", "Login Success", "Ok");
-                    Navigation.PushAsync(new Page1());
+                //DisplayAlert("Login", "Login Success", "Ok");
+                /*var result = await App.RestService.Login(user);
+                if(result!=null)
+                {
+                    App.UserDatabase.SaveUser(user);
+                }*/
+                await Navigation.PushAsync(new Page1());
                 }
                 else
                 {
-                    DisplayAlert("Login", "Login Not Correct", "Ok");
+                await DisplayAlert("Login", "Login Not Correct", "Ok");
                 }
             
 

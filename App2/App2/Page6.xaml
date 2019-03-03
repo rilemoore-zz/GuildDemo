@@ -15,6 +15,7 @@
             <Button
                 Text="Smash Ultimate Stage Striker"
                 Clicked="Handle_Clicked"
+                 WidthRequest="250"
                 />
         </StackLayout>
     </ContentPage.Content>

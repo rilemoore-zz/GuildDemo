@@ -6,7 +6,7 @@
              Title="Find Public Events">
 
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent">
             <Label Text="Enter Search criteria"
                 x:Name="Title" 
                 VerticalOptions="Start" 
@@ -55,7 +55,7 @@
                 VerticalOptions="Start"
                 HorizontalOptions="Center"
                 />
-            <Button Text="Search" Clicked="Handle_Clicked"></Button>
+            <Button Text="Search" Clicked="Handle_Clicked" HorizontalOptions="Center" WidthRequest="250"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

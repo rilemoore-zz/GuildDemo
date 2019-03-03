@@ -16,7 +16,7 @@ namespace App2.Stuff
             while (going == false)
             {
                 going = true;
-                for(int i = 0; i < 7; i++)
+                for(int i = 0; i < classlist.Count-1; i++)
                 {
                     if (classlist[i].initiative < classlist[i + 1].initiative)
                     {

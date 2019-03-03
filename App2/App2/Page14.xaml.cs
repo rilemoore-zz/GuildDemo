@@ -97,5 +97,19 @@ namespace App2
         {
             Kalos.Text = "";
         }
+        void Refresh(object sender, System.EventArgs e)
+        {
+            BF.Text = "Battlefield";
+            FD.Text = "Final Destination";
+            SV.Text = "Smashville";
+            PS2.Text = "Pokemon Stadium 2";
+            LC.Text = "Lylat Cruise";
+            CS.Text = "Castle Siege";
+            Unova.Text = "Unova Pokemon League";
+            TC.Text = "Town and City";
+            YS.Text = "Yoshi's Story";
+            YI.Text = "Yoshi's Island";
+            Kalos.Text = "Kalos Pokemon League";
+        }
     }
 }

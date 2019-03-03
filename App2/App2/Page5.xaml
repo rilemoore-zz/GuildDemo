@@ -14,10 +14,12 @@
             <Button
                 Text="Yu-gi-oh"
                 Clicked="Handle_Clicked"
+                 WidthRequest="250"
                 />
             <Button
                 Text="Magic the Gathering"
                 Clicked="Handle_Clicked2"
+                 WidthRequest="250"
                 />
         </StackLayout>
     </ContentPage.Content>

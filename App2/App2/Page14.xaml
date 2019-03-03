@@ -21,26 +21,31 @@
                 x:Name="BF"
                 Text="Battlefield"
                 Clicked="BF1"
+                     WidthRequest="250"
                 />
             <Button
                 x:Name="FD"
                 Text="Final Destination"
                 Clicked="FD1"
+                 WidthRequest="250"
                 />
             <Button
                 x:Name="SV"
                 Text="Smashville"
                 Clicked="SV1"
+                 WidthRequest="250"
                 />
             <Button
                 x:Name="PS2"
                 Text="Pokemon Stadium 2"
                 Clicked="PS21"
+                 WidthRequest="250"
                 />
             <Button
                 x:Name="LC"
                 Text="Lylat Cruise"
                 Clicked="LC1"
+                 WidthRequest="250"
                 />
             <Label Text="Counterpick Stages"
                 VerticalOptions="CenterAndExpand" 
@@ -56,33 +61,46 @@
                 x:Name="CS"
                 Text="Castle Siege"
                 Clicked="CS1"
+                 WidthRequest="250"
                 />
             <Button
                 x:Name="Unova"
                 Text="Unova Pokemon League"
                 Clicked="Unova1"
+                 WidthRequest="250"
                 />
             <Button
                 x:Name="TC"
                 Text="Town and City"
                 Clicked="TC1"
+                 WidthRequest="250"
                 />
             <Button
                 x:Name="YS"
                 Text="Yoshi's Story"
                 Clicked="YS1"
+                 WidthRequest="250"
                 />
             <Button
                 x:Name="YI"
                 Text="Yoshi's Island Brawl"
                 Clicked="YI1"
+                 WidthRequest="250"
                 />
             <Button
                 x:Name="Kalos"
                 Text="Kalos Pokemon League"
                 Clicked="Kalos1"
+                 WidthRequest="250"
                 />
-        </StackLayout>
+
+                <Button
+                x:Name="refreshbutton"
+                Text="Refresh"
+                Clicked="Refresh"
+                 WidthRequest="250"
+                />
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

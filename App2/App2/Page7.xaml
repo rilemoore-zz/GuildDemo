@@ -63,7 +63,7 @@
                 MaxLength="100" 
                 WidthRequest="100"
                 Keyboard="Numeric"/>
-                <Button Text="Create Event" Clicked="Handle_Clicked" CornerRadius="50" BackgroundColor="#d1eefc" Opacity="1">
+                <Button Text="Create Event" Clicked="Handle_Clicked" CornerRadius="50" BackgroundColor="#d1eefc" Opacity="1" WidthRequest="250">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android" Value="Mairon.ttf#Mairon"/>

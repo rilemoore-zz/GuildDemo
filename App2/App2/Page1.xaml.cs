@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using App2.Stuff;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using FormsControls.Base;
@@ -13,6 +13,7 @@ namespace App2
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Page1 : ContentPage, IAnimationPage
 	{
+        static RestService restService;
 		public Page1 ()
 		{
             
@@ -43,6 +44,7 @@ namespace App2
         void Handle_Clicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new Page2());
+           // App.RestService.GetResponse(Constants.LoginUrl);
         }
         void Handle_Clicked2(object sender, System.EventArgs e)
         {

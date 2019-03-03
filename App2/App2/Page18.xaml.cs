@@ -40,10 +40,10 @@ namespace App2
             {
                 P2Mod.Text = "0";
             }
-            int x = Int32.Parse(P1Life.Text);
-            int y = Int32.Parse(P2Life.Text);
-            int a = Int32.Parse(P1Mod.Text);
-            int b = Int32.Parse(P2Mod.Text);
+            float x = float.Parse(P1Life.Text);
+            float y = float.Parse(P2Life.Text);
+            float a = float.Parse(P1Mod.Text);
+            float b = float.Parse(P2Mod.Text);
             x = x + a;
             y = y + b;
             P1Life.Text = x.ToString();
