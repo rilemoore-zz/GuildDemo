@@ -45,9 +45,9 @@ namespace App2
 
         public async Task<T> PostResponse<T>(string weburl, string jsonstring) where T : class
         {
-            var Token = App.TokenDatabase.GetToken();
+            //var Token = App.TokenDatabase.GetToken();
             string ContentType = "application/json";
-            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Token.access_token);
+            //client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Token.access_token);
             var result = await client.PostAsync(weburl, new StringContent(jsonstring, Encoding.UTF8, ContentType));
             var JsonResult = result.Content.ReadAsStringAsync().Result;
             var contentResp = JsonConvert.DeserializeObject<T>(JsonResult);
@@ -57,9 +57,9 @@ namespace App2
 
         public async Task<T> GetResponse<T>(string weburl) where T :  class
         {
-            var Token = App.TokenDatabase.GetToken();
+            //var Token = App.TokenDatabase.GetToken();
             
-            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Token.access_token);
+            //client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Token.access_token);
             var response = await client.GetAsync(weburl);
             var JsonResult = response.Content.ReadAsStringAsync().Result;
             var contentResp = JsonConvert.DeserializeObject<T>(JsonResult);

@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
             <Label 
-                x:Name="Title"
+                x:Name="a"
                 Text="Event Creation"
                 HeightRequest="100"
                 VerticalOptions="Start" 
@@ -20,34 +20,44 @@
                 </Label.FontFamily>
             </Label>
             <Entry
+                x:Name="EventTitle"
                 HorizontalTextAlignment="Center"
                 VerticalOptions="Start"
                 HorizontalOptions="Start"
-                Placeholder="Enter Event Name"
+                Placeholder="Enter Event Title"
                 PlaceholderColor="#A00000"
                 BackgroundColor="Transparent"
                 MaxLength="500" 
                 WidthRequest="500" 
                 />
-            <Entry               
+            <Entry
+                x:Name="StartTime"
                 HorizontalTextAlignment="Center"
                 VerticalOptions="Start"
                 HorizontalOptions="Center"
-                Placeholder="Enter Event Description"
+                Placeholder="Enter Event Start Time"
                 PlaceholderColor="#A00000"
                 BackgroundColor="Transparent"
                 MaxLength="500" 
-                WidthRequest="500" />
-            <DatePicker
-                VerticalOptions="Center"
+                WidthRequest="500"
+                Keyboard="Numeric" />
+            <Entry
+                x:Name="EndTime"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"
                 HorizontalOptions="Center"
-                TextColor="#A00000"
-                />
+                Placeholder="Enter Event End Time"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
+                MaxLength="500" 
+                WidthRequest="500" 
+                Keyboard="Numeric" />
+
 
             <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
             <Entry
-                
-                Placeholder="Start Time"
+                x:Name="Date"
+                Placeholder="Enter Event Date"
                 PlaceholderColor="#A00000"
                 HorizontalTextAlignment="Center"
                 BackgroundColor="Transparent"
@@ -55,14 +65,44 @@
                 WidthRequest="100" />
                 
             <Entry
-
-                Placeholder="End Time"
+                x:Name="UserID"
+                Placeholder="Enter User ID"
                 PlaceholderColor="#A00000"
                 BackgroundColor="Transparent"
                 HorizontalTextAlignment="Center"
                 MaxLength="100" 
                 WidthRequest="100"
                 Keyboard="Numeric"/>
+
+                <Entry
+                x:Name="Game"
+                Placeholder="Enter Game"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
+                HorizontalTextAlignment="Center"
+                MaxLength="100" 
+                WidthRequest="100"
+                />
+
+                <Entry
+                x:Name="Platform"
+                Placeholder="Enter Platform"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
+                HorizontalTextAlignment="Center"
+                MaxLength="100" 
+                WidthRequest="100"/>
+
+                <Entry
+                x:Name="NumPlayers"
+                Placeholder="Number of Players"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
+                HorizontalTextAlignment="Center"
+                MaxLength="100" 
+                WidthRequest="100"
+                />
+
                 <Button Text="Create Event" Clicked="Handle_Clicked" CornerRadius="50" BackgroundColor="#d1eefc" Opacity="1" WidthRequest="250">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
