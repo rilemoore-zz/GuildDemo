@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.RoundRobin">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="Match0A" Text="" Grid.Row="0" Grid.Column="0" Clicked="Match0a" TextColor="Red"/>
+                <Label Text="vs" HorizontalTextAlignment="Center" Grid.Row ="0" Grid.Column="1"></Label>
+                <Button x:Name="Match0B" Text="" Grid.Row="0" Grid.Column="2" Clicked="Match0b" TextColor="Red"/>
+
+                <Button x:Name="Match1A" Text="" Grid.Row="1" Grid.Column="0" Clicked="Match1a" TextColor="Red"/>
+                <Label Text="vs"  HorizontalTextAlignment="Center" Grid.Row ="1" Grid.Column="1"></Label>
+                <Button x:Name="Match1B" Text="" Grid.Row="1" Grid.Column="2" Clicked="Match1b" TextColor="Red"/>
+
+                <Button x:Name="Match2A" Text="" Grid.Row="2" Grid.Column="0" Clicked="Match2a" TextColor="Red"/>
+                <Label Text="vs"  HorizontalTextAlignment="Center" Grid.Row ="2" Grid.Column="1"></Label>
+                <Button x:Name="Match2B" Text="" Grid.Row="2" Grid.Column="2" Clicked="Match2b" TextColor="Red"/>
+
+                <Button x:Name="Match3A" Text="" Grid.Row="3" Grid.Column="0" Clicked="Match3a" TextColor="Red"/>
+                <Label Text="vs"  HorizontalTextAlignment="Center" Grid.Row ="3" Grid.Column="1"></Label>
+                <Button x:Name="Match3B" Text="" Grid.Row="3" Grid.Column="2" Clicked="Match3b" TextColor="Red"/>
+
+                <Button x:Name="Match4A" Text="" Grid.Row="4" Grid.Column="0" Clicked="Match4a" TextColor="Red"/>
+                <Label Text="vs"  HorizontalTextAlignment="Center" Grid.Row ="4" Grid.Column="1"></Label>
+                <Button x:Name="Match4B" Text="" Grid.Row="4" Grid.Column="2" Clicked="Match4b" TextColor="Red"/>
+
+                <Button x:Name="Match5A" Text="" Grid.Row="5" Grid.Column="0" Clicked="Match5a" TextColor="Red"/>
+                <Label Text="vs"  HorizontalTextAlignment="Center" Grid.Row ="5" Grid.Column="1"></Label>
+                <Button x:Name="Match5B" Text="" Grid.Row="5" Grid.Column="2" Clicked="Match5b" TextColor="Red"/>
+
+                <Label Text="Scoreboard" Grid.Row="7"  HorizontalTextAlignment="Center" Grid.Column="0"></Label>
+                <Label Text="Wins" Grid.Row="7"  HorizontalTextAlignment="Center" Grid.Column="1"></Label>
+                <Label Text="Losses" Grid.Row="7"  HorizontalTextAlignment="Center" Grid.Column="2"></Label>
+
+                <Label x:Name="PlayerA" Text="Player1"  HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="8"></Label>
+                <Label x:Name="Wins0" Text=""  HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="8"></Label>
+                <Label x:Name="Losses0" Text=""  HorizontalTextAlignment="Center" Grid.Column="2" Grid.Row="8"></Label>
+
+                <Label x:Name="PlayerB" Text="Player2"  HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="9"></Label>
+                <Label x:Name="Wins1" Text=""  HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="9"></Label>
+                <Label x:Name="Losses1" Text=""  HorizontalTextAlignment="Center" Grid.Column="2" Grid.Row="9"></Label>
+
+                <Label x:Name="PlayerC" Text="Player3"  HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="10"></Label>
+                <Label x:Name="Wins2" Text=""  HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="10"></Label>
+                <Label x:Name="Losses2" Text=""  HorizontalTextAlignment="Center" Grid.Column="2" Grid.Row="10"></Label>
+
+                <Label x:Name="PlayerD" Text="Player4"  HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="11"></Label>
+                <Label x:Name="Wins3" Text=""  HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="11"></Label>
+                <Label x:Name="Losses3" Text=""  HorizontalTextAlignment="Center" Grid.Column="2" Grid.Row="11"></Label>
+
+
+
+            </Grid>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

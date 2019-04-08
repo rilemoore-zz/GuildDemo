@@ -17,6 +17,11 @@
                 Clicked="Handle_Clicked"
                  WidthRequest="250"
                 />
+            <Button
+                Text="Bracket Generator"
+                Clicked="Handle_Clicked2"
+                 WidthRequest="250"
+                />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -56,16 +56,7 @@ namespace App2
         void Handle_Clicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new Page2());
-            //Console.WriteLine(events.Count);
 
-            //try
-            //{   
-            //List<GameEvent> result = Task.Run<List<GameEvent>>(async () => await App.RestService.GetResponse<List<GameEvent>>(Constants.LoginUrl)).Result;
-            //}
-            //catch (Exception exception)
-            //{
-            //    Console.WriteLine(exception.Message);
-            //}
         }
         void Handle_Clicked2(object sender, System.EventArgs e)
         {

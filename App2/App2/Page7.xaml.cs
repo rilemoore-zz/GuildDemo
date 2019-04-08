@@ -8,6 +8,7 @@ using App2.Stuff;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Newtonsoft.Json;
+using Java.Time.Format;
 
 namespace App2
 {
@@ -42,7 +43,10 @@ namespace App2
         {
             PostEvent();
         }
-
+        void OnDateSelected(object sender, DateChangedEventArgs e)
+        {
+            Platform.Text = e.NewDate.ToString();
+        }
         async void PostEvent()
         {
             GameEvent gameEvent = new GameEvent();

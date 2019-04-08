@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,6 +35,11 @@ namespace App2
         void Handle_Clicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new Page14());
+        }
+
+        void Handle_Clicked2(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new BracketSetup());
         }
     }
 }

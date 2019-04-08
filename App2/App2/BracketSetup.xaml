@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="Transparent"
+             x:Class="App2.BracketSetup"
+             x:Name="parent">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
+            <Label Text="Bracket Generator"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Picker Title="Select Tournament Format"
+                    x:Name="Dropdown"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                BackgroundColor="Transparent"
+                WidthRequest="350">
+                <Picker.Items>
+                    <x:String>Double Elimination</x:String>
+                    <x:String>Single Elimination</x:String>
+                    <x:String>Round Robin</x:String>
+                    <x:String>Swiss</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Entry Placeholder="Number of players"
+                   Text=""></Entry>
+
+            <Entry Placeholder="Player Name"
+                   Text="Player 1"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
+                MaxLength="350" 
+                WidthRequest="350"
+                   x:Name="Player0">
+            </Entry>
+
+            <Entry Placeholder="Player Name"
+                   Text="Player 2"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
+                MaxLength="350" 
+                WidthRequest="350"
+                   x:Name="Player1">
+            </Entry>
+
+            <Entry Placeholder="Player Name"
+                   Text="Player 3"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
+                MaxLength="350" 
+                WidthRequest="350"
+                   x:Name="Player2">
+            </Entry>
+
+            <Entry Placeholder="Player Name"
+                   Text="Player 4"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
+                MaxLength="350" 
+                WidthRequest="350"
+                   x:Name="Player3">
+            </Entry>
+
+            <Entry Placeholder="Player Name"
+                   Text="Player 5"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
+                MaxLength="350" 
+                WidthRequest="350"
+                   x:Name="Player4">
+            </Entry>
+
+            <Entry Placeholder="Player Name"
+                   Text="Player 6"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
+                MaxLength="350" 
+                WidthRequest="350"
+                   x:Name="Player5">
+            </Entry>
+
+            <Entry Placeholder="Player Name"
+                   Text="Player 7"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
+                MaxLength="350" 
+                WidthRequest="350"
+                   x:Name="Player6">
+            </Entry>
+
+            <Entry Placeholder="Player Name"
+                   Text="Player 8"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                PlaceholderColor="#A00000"
+                BackgroundColor="Transparent"
+                MaxLength="350" 
+                WidthRequest="350"
+                   x:Name="Player7">
+            </Entry>
+            <Button  x:Name ="button" Text="Manage Events" Clicked="Handle_ClickedAsync" CornerRadius="50" BackgroundColor="#d1eefc" Opacity="1" HorizontalOptions="Center" WidthRequest="250"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

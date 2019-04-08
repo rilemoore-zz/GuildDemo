@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace App2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Page14 : ContentPage, IAnimationPage
+    public partial class Frostbite : ContentPage, IAnimationPage
     {
-        public Page14()
+        public Frostbite()
         {
             //public int ban { get; set; }
             InitializeComponent();
@@ -48,39 +48,39 @@ namespace App2
                  Banthingy.Text = "Stage Decided!";
              }
          }*/
+
+        void Genesix(object sender, System.EventArgs e)
+        {
+
+            Navigation.PopAsync();
+        }
+
         void BF1(object sender, System.EventArgs e)
         {
             BF.Text = "";
-            
+
         }
         void FD1(object sender, System.EventArgs e)
         {
             FD.Text = "";
-           
+
         }
         void SV1(object sender, System.EventArgs e)
         {
             SV.Text = "";
-           
+
         }
         void PS21(object sender, System.EventArgs e)
         {
             PS2.Text = "";
-        
+
         }
         void LC1(object sender, System.EventArgs e)
         {
             LC.Text = "";
-           
+
         }
-        void CS1(object sender, System.EventArgs e)
-        {
-            CS.Text = "";
-        }
-        void Unova1(object sender, System.EventArgs e)
-        {
-            Unova.Text = "";
-        }
+
         void TC1(object sender, System.EventArgs e)
         {
             TC.Text = "";
@@ -104,18 +104,10 @@ namespace App2
             SV.Text = "Smashville";
             PS2.Text = "Pokemon Stadium 2";
             LC.Text = "Lylat Cruise";
-            CS.Text = "Castle Siege";
-            Unova.Text = "Unova Pokemon League";
             TC.Text = "Town and City";
             YS.Text = "Yoshi's Story";
             YI.Text = "Yoshi's Island";
             Kalos.Text = "Kalos Pokemon League";
-        }
-
-        void Frostbite(object sender, System.EventArgs e)
-        {
-
-            Navigation.PushAsync(new Frostbite());
         }
 
     }

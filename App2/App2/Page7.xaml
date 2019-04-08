@@ -30,6 +30,13 @@
                 MaxLength="500" 
                 WidthRequest="500" 
                 />
+            <DatePicker x:Name="Datepick" MinimumDate="{Binding MinDate}"  MaximumDate="{Binding MaxDate}" Date="{Binding SelectedDate}" DateSelected="OnDateSelected">
+                
+            </DatePicker>
+            <TimePicker x:Name="Time">
+                
+            </TimePicker>
+            
             <Entry
                 x:Name="StartTime"
                 HorizontalTextAlignment="Center"
