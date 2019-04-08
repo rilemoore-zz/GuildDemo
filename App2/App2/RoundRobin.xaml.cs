@@ -151,9 +151,9 @@ namespace App2
             Update();
         }
 
-        void Match3b(object sender, System.EventArgs e)
+        void Match3a(object sender, System.EventArgs e)
         {
-            Match3B.FontAttributes = FontAttributes.Bold;
+            Match3A.FontAttributes = FontAttributes.Bold;
             Constants.Entrants[1].Wins++;
             Constants.Entrants[3].Losses++;
             Wins1.Text = Constants.Entrants[1].Wins.ToString();
@@ -162,10 +162,10 @@ namespace App2
             Match3B.IsEnabled = false;
         }
 
-        void Match3a(object sender, System.EventArgs e)
+        void Match3b(object sender, System.EventArgs e)
         {
 
-            Match3A.FontAttributes = FontAttributes.Bold;
+            Match3B.FontAttributes = FontAttributes.Bold;
             Constants.Entrants[3].Wins++;
             Constants.Entrants[1].Losses++;
             Wins3.Text = Constants.Entrants[3].Wins.ToString();
