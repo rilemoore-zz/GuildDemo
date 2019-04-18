@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.Page19">
+             x:Class="App2.Page19"
+             Title="Magic the Gathering Life Tracker"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent">
             <Label Text=""
@@ -9,17 +11,6 @@
                 HorizontalOptions="CenterAndExpand" />
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
@@ -32,14 +23,62 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Entry x:Name="P1Life" Grid.Row="0" Grid.Column="1" Text="20" HorizontalTextAlignment="Center" VerticalOptions="Center" Keyboard="Numeric" HeightRequest="250"/>
-                <Button x:Name="p1down" Grid.Row="0" Grid.Column="0"  Text="down" Clicked="P1Down" />
-                <Button x:Name="p1up" Grid.Row="0" Grid.Column="2"  Text="up" Clicked="P1Up" />
-                <Entry x:Name="P2Life" Grid.Row="10" Grid.Column="1" Text="20" HorizontalTextAlignment="Center" Keyboard="Numeric" HeightRequest="250" />
-                <Button x:Name="p2down"  Grid.Row="10" Grid.Column="0"  Text="down" Clicked="P2Down" />
-                <Button x:Name="p2up" Grid.Row="10" Grid.Column="2"  Text="up" Clicked="P2Up" />
+                <Label Text="Opponent's Life: " Grid.Row="2" Grid.Column="1"  RotationY="180" RotationX="180" TextColor="DarkRed">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Label x:Name="OpLife2"  Text="20" Grid.Row="2" Grid.Column="0" RotationY="180" RotationX="180" TextColor="DarkRed" >
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
 
-          </Grid>
+                <Button x:Name="P1Life" Grid.Row="0" Grid.Column="1" Text="20" VerticalOptions="Center" HeightRequest="250" RotationY="180" RotationX="180" />
+                <Button x:Name="p1down" Grid.Row="0" Grid.Column="0"  Text="down" Clicked="P1Down" RotationY="180" RotationX="180" />
+                <Button x:Name="p1up" Grid.Row="0" Grid.Column="2"  Text="up" Clicked="P1Up" RotationY="180" RotationX="180"  />
+
+            </Grid>
+            <Image Source="Magicnew.png" ScaleX=".8" ScaleY=".75"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions> 
+                
+                <Label Text="Opponent's Life: " Grid.Row="2" Grid.Column="1" TextColor="DarkRed" >
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Label x:Name="OpLife1"  Text="20" Grid.Row="2" Grid.Column="2" TextColor="DarkRed">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Button x:Name="P2Life" Grid.Row="4" Grid.Column="1" Text="20" HeightRequest="250" />
+                <Button x:Name="p2down"  Grid.Row="4" Grid.Column="0"  Text="down" Clicked="P2Down" />
+                <Button x:Name="p2up" Grid.Row="4" Grid.Column="2"  Text="up" Clicked="P2Up" />
+
+            </Grid>
 
         </StackLayout>
     </ContentPage.Content>

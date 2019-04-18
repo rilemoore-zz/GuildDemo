@@ -31,7 +31,7 @@
                 </Button.FontFamily>                
             </Button>
 
-            <Button Text="My Calendar" Clicked="Handle_Clicked3" CornerRadius="50" BackgroundColor="#d1eefc" HorizontalOptions="Center" WidthRequest="250">
+            <Button Text="data binding" Clicked="Handle_Clicked3" CornerRadius="50" BackgroundColor="#d1eefc" HorizontalOptions="Center" WidthRequest="250">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>

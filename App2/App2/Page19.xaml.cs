@@ -35,6 +35,7 @@ namespace App2
             newLife = Int32.Parse(P1Life.Text);
             newLife++;
             P1Life.Text = newLife.ToString();
+            OpLife1.Text = newLife.ToString();
         }
         private void P1Down(object sender, EventArgs e)
         {
@@ -42,6 +43,7 @@ namespace App2
             newLife = Int32.Parse(P1Life.Text);
             newLife--;
             P1Life.Text = newLife.ToString();
+            OpLife1.Text = newLife.ToString();
         }
         private void P2Up(object sender, EventArgs e)
         {
@@ -49,6 +51,7 @@ namespace App2
             newLife = Int32.Parse(P2Life.Text);
             newLife++;
             P2Life.Text = newLife.ToString();
+            OpLife2.Text = newLife.ToString();
         }
         private void P2Down(object sender, EventArgs e)
         {
@@ -56,6 +59,7 @@ namespace App2
             newLife = Int32.Parse(P2Life.Text);
             newLife--;
             P2Life.Text = newLife.ToString();
+            OpLife2.Text = newLife.ToString();
         }
 
         /*private void Calc(object sender, EventArgs e)

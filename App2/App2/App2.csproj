@@ -45,6 +45,9 @@
     <Compile Update="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="EventSearch.xaml.cs">
+      <DependentUpon>EventSearch.xaml</DependentUpon>
+    </Compile>
     <Compile Update="page24.xaml.cs">
       <DependentUpon>page24.xaml</DependentUpon>
     </Compile>
@@ -75,7 +78,7 @@
     <EmbeddedResource Update="Page12.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Page13.xaml">
+    <EmbeddedResource Update="EventSearch.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Page14.xaml">

@@ -5,17 +5,15 @@
              Title="DND Tools Menu">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent" Orientation="Vertical" Opacity="1">
-            <Label Text="DND Menu"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-            <Button Text="Dice Rollers" Clicked="Handle_Clicked" CornerRadius="50" BackgroundColor="#d1eefc" Opacity="1">
+
+            <Button Text="Dice Rollers" Clicked="Handle_Clicked" BackgroundColor="#d1eefc" Opacity="1">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                     </OnPlatform>
                 </Button.FontFamily>
             </Button>
-            <Button Text="Initiative Tracker" Clicked="Handle_Clicked2" CornerRadius="50" BackgroundColor="#d1eefc" Opacity="1">
+            <Button Text="Initiative Tracker" Clicked="Handle_Clicked2" BackgroundColor="#d1eefc" Opacity="1">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>

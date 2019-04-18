@@ -7,11 +7,7 @@
     <ContentPage.Content>
         <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
             <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
-                <Label 
-                Text="Dice Rollers"
-                TextColor="Brown"
-                VerticalOptions="StartAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
                 <Button
                 x:Name="Roll_D20"
                 Text="D20"
@@ -19,7 +15,15 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                 Clicked="D20"
-                />
+                     BackgroundColor="#d1eefc"
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
                 <Button
                 x:Name="Roll_D2"
                 Text="D2"
@@ -27,7 +31,15 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                 Clicked="D2"
-                />
+                     BackgroundColor="#d1eefc"
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
                 <Button
                 x:Name="Roll_D3"
                 Text="D3"
@@ -35,7 +47,15 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                 Clicked="D3"
-                />
+                     BackgroundColor="#d1eefc"
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
                 <Button
                 x:Name="Roll_D4"
                 Text="D4"
@@ -43,7 +63,15 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                 Clicked="D4"
-                />
+                     BackgroundColor="#d1eefc"
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
                 <Button
                 x:Name="Roll_D6"
                 Text="D6"
@@ -51,7 +79,15 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                 Clicked="D6"
-                />
+                     BackgroundColor="#d1eefc"
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
                 <Button
                 x:Name="Roll_D8"
                 Text="D8"
@@ -59,7 +95,15 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                 Clicked="D8"
-                />
+                     BackgroundColor="#d1eefc"
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
                 <Button
                 x:Name="Roll_D10"
                 Text="D10"
@@ -67,6 +111,7 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                 Clicked="D10"
+                     BackgroundColor="#d1eefc"
                 />
                 <Button
                 x:Name="Roll_D12"
@@ -74,8 +119,15 @@
                 TextColor="Brown"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
-                Clicked="D12"
-                />
+                Clicked="D12" BackgroundColor="#d1eefc"
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
                 <Button
                 x:Name="Roll_D100"
                 Text="D100"
@@ -83,12 +135,21 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                 Clicked="D100"
-                />
+                     BackgroundColor="#d1eefc"
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
                 <Entry
                 x:Name="Min"
                 Text=""
                 Placeholder="Enter a minimum"
                 Keyboard="Numeric"
+
                 />
                 <Button
                 x:Name="Roll_Custom"
@@ -97,12 +158,21 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                 Clicked="Custom"
-                />
+                     BackgroundColor="#d1eefc"
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
                 <Entry
                 x:Name="Max"
                 Text=""
                 Placeholder="Enter a maximum"
                 Keyboard="Numeric"
+                    
                 />
 
             </StackLayout>

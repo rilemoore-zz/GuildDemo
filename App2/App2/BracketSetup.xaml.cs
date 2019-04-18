@@ -41,7 +41,7 @@ namespace App2
         async void Handle_ClickedAsync(object sender, System.EventArgs e)
         {
            
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < 4; i++)
             {
                 Constants.Entrants.Add(new BracketNames());
             }
@@ -67,22 +67,22 @@ namespace App2
             Constants.Entrants[3].Seed = 4;
             Constants.Entrants[3].Wins = 0;
             Constants.Entrants[3].Losses = 0;
-            Constants.Entrants[4].Name = Player4.Text;
-            Constants.Entrants[4].Seed = 5;
-            Constants.Entrants[4].Wins = 0;
-            Constants.Entrants[4].Losses = 0;
-            Constants.Entrants[5].Name = Player5.Text;
-            Constants.Entrants[5].Seed = 6;
-            Constants.Entrants[5].Wins = 0;
-            Constants.Entrants[5].Losses = 0;
-            Constants.Entrants[6].Name = Player6.Text;
-            Constants.Entrants[6].Seed = 7;
-            Constants.Entrants[6].Wins = 0;
-            Constants.Entrants[6].Losses = 0;
-            Constants.Entrants[7].Name = Player7.Text;
-            Constants.Entrants[7].Seed = 8;
-            Constants.Entrants[7].Wins = 0;
-            Constants.Entrants[7].Losses = 0;
+            //Constants.Entrants[4].Name = Player4.Text;
+            //Constants.Entrants[4].Seed = 5;
+            //Constants.Entrants[4].Wins = 0;
+            //Constants.Entrants[4].Losses = 0;
+            //Constants.Entrants[5].Name = Player5.Text;
+            //Constants.Entrants[5].Seed = 6;
+            //Constants.Entrants[5].Wins = 0;
+            //Constants.Entrants[5].Losses = 0;
+            //Constants.Entrants[6].Name = Player6.Text;
+            //Constants.Entrants[6].Seed = 7;
+            //Constants.Entrants[6].Wins = 0;
+            //Constants.Entrants[6].Losses = 0;
+            //Constants.Entrants[7].Name = Player7.Text;
+            //Constants.Entrants[7].Seed = 8;
+            //Constants.Entrants[7].Wins = 0;
+            //Constants.Entrants[7].Losses = 0;
             var bracketPage = new DoubleElim
             {
                 BindingContext = Entrant

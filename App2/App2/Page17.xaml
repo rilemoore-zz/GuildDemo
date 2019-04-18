@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.Page17">
+             x:Class="App2.Page17"
+             Title="Initiative Tracker">
     <ContentPage.Content>
         <ScrollView VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Transparent">
         <StackLayout>
-            <Label Text="Initiative Tracker"
-                VerticalOptions="Start" 
-                HorizontalOptions="CenterAndExpand" />
+
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -31,39 +30,39 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Entry x:Name="NumPlayers" Grid.Row="0" Grid.Column="0" Placeholder ="Enter Number of Players" Text="" />
+                <Entry x:Name="NumPlayers" Grid.Row="0" Grid.Column="0" Placeholder ="Enter Player Count" Text="" />
                 <Entry x:Name="Init0Name" Grid.Row="1" Grid.Column="0" Placeholder="Player 1" Text="" WidthRequest="250" />
-                    <Entry x:Name="Init0" Grid.Row="1" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250" />
+                    <Entry x:Name="Init0" Grid.Row="1" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250" Keyboard="Numeric"/>
                     <Entry x:Name="Init1Name" Grid.Row="2" Grid.Column="0" Placeholder="Player 2" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init1" Grid.Row="2" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"/>
+                    <Entry x:Name="Init1" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"/>
                     <Entry x:Name="Init2Name" Grid.Row="3" Grid.Column="0" Placeholder="Player 3" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init2" Grid.Row="3" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250" />
+                    <Entry x:Name="Init2" Keyboard="Numeric" Grid.Row="3" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250" />
                     <Entry x:Name="Init3Name" Grid.Row="4" Grid.Column="0" Placeholder="Player 4" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init3" Grid.Row="4" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
+                    <Entry x:Name="Init3" Keyboard="Numeric" Grid.Row="4" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
                     <Entry x:Name="Init4Name" Grid.Row="5" Grid.Column="0" Placeholder="Player 5" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init4" Grid.Row="5" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
+                    <Entry x:Name="Init4" Keyboard="Numeric" Grid.Row="5" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
                     <Entry x:Name="Init5Name" Grid.Row="6" Grid.Column="0" Placeholder="Player 6" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init5" Grid.Row="6" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
+                    <Entry x:Name="Init5" Keyboard="Numeric" Grid.Row="6" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
                     <Entry x:Name="Init6Name" Grid.Row="7" Grid.Column="0" Placeholder="Player 7" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init6" Grid.Row="7" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
+                    <Entry x:Name="Init6" Keyboard="Numeric" Grid.Row="7" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
                     <Entry x:Name="Init7Name" Grid.Row="8" Grid.Column="0" Placeholder="Player 8" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init7" Grid.Row="8" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
+                    <Entry x:Name="Init7" Keyboard="Numeric" Grid.Row="8" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
                     <Entry x:Name="Init8Name" Grid.Row="9" Grid.Column="0" Placeholder="Player 9" Text="" WidthRequest="250" />
-                    <Entry x:Name="Init8" Grid.Row="9" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
+                    <Entry x:Name="Init8" Keyboard="Numeric" Grid.Row="9" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
                     <Entry x:Name="Init9Name" Grid.Row="10" Grid.Column="0" Placeholder="Player 10" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init9" Grid.Row="10" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
+                    <Entry x:Name="Init9" Keyboard="Numeric" Grid.Row="10" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
                     <Entry x:Name="Init10Name" Grid.Row="11" Grid.Column="0" Placeholder="Player 11" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init10" Grid.Row="11" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
+                    <Entry x:Name="Init10" Keyboard="Numeric" Grid.Row="11" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
                     <Entry x:Name="Init11Name" Grid.Row="12" Grid.Column="0" Placeholder="Player 12" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init11" Grid.Row="12" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
+                    <Entry x:Name="Init11" Keyboard="Numeric" Grid.Row="12" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
                     <Entry x:Name="Init12Name" Grid.Row="13" Grid.Column="0" Placeholder="Player 13" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init12" Grid.Row="13" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
+                    <Entry x:Name="Init12" Keyboard="Numeric" Grid.Row="13" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
                     <Entry x:Name="Init13Name" Grid.Row="14" Grid.Column="0" Placeholder="Player 14" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init13" Grid.Row="14" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
+                    <Entry x:Name="Init13" Keyboard="Numeric" Grid.Row="14" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
                     <Entry x:Name="Init14Name" Grid.Row="15" Grid.Column="0" Placeholder="Player 15" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init14" Grid.Row="15" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
+                    <Entry x:Name="Init14" Keyboard="Numeric" Grid.Row="15" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="250"  />
                 <Entry x:Name="Init15Name" Grid.Row="16" Grid.Column="0" Placeholder="Player 16" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init15" Grid.Row="16" Grid.Column="1" Placeholder="Initiative" Text="0"  WidthRequest="250"  />
+                    <Entry x:Name="Init15" Keyboard="Numeric" Grid.Row="16" Grid.Column="1" Placeholder="Initiative" Text="0"  WidthRequest="250"  />
                 <Button Grid.Row="17" Grid.Column="0" Text="D20" Clicked="D20"  WidthRequest="250" />
                 <Button Grid.Row="17" Grid.Column="1" Text="Sort" Clicked="Sort"  WidthRequest="250" />
 

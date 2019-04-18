@@ -48,10 +48,10 @@ namespace App2
             Date.Text = events[6].EventDate;
             StartTime.Text = events[6].StartTime.ToString();
             EndTime.Text = events[6].EndTime.ToString();
-            UserId.Text = events[6].UserId.ToString();
+            // UserId.Text = events[6].UserId.ToString();
             Game.Text = events[6].EventGame;
             Platform.Text = events[6].Platform;
-            NumPlayers.Text = events[6].numberOfPlayers.ToString();
+            //NumPlayers.Text = events[6].numberOfPlayers.ToString();
 
         }
 

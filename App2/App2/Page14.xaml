@@ -10,11 +10,18 @@
 
                 <Button
                 x:Name="FrostBite"
-                Text="Frostbite Ruleset"
+                Text="Switch to Frostbite Ruleset"
                 Clicked="Frostbite"
                      WidthRequest="250"
-                />
-
+                     BackgroundColor="#d1eefc" 
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
                 <Label Text="Starter Stages Genesis Ruleset"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
@@ -43,85 +50,190 @@
                 x:Name="BF"
                 Text="Battlefield"
                 Clicked="BF1"
+                 BackgroundColor="#d1eefc" 
                      WidthRequest="250"
-                />
-            <Button
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
+                <Button
+                     BackgroundColor="#d1eefc" 
                 x:Name="FD"
                 Text="Final Destination"
                 Clicked="FD1"
                  WidthRequest="250"
-                />
-            <Button
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
+                <Button
+                     BackgroundColor="#d1eefc" 
                 x:Name="SV"
                 Text="Smashville"
                 Clicked="SV1"
                  WidthRequest="250"
-                />
-            <Button
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
+                <Button
+                     BackgroundColor="#d1eefc" 
                 x:Name="PS2"
                 Text="Pokemon Stadium 2"
                 Clicked="PS21"
                  WidthRequest="250"
-                />
-            <Button
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
+                <Button
+                     BackgroundColor="#d1eefc" 
                 x:Name="LC"
                 Text="Lylat Cruise"
                 Clicked="LC1"
                  WidthRequest="250"
-                />
-            <Label Text="Counterpick Stages"
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
+                <Label Text="Counterpick Stages"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
-                BackgroundColor="Transparent"/>
-            <Label 
+                BackgroundColor="Transparent">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Label 
                 x:Name="counterpicks"
                 Text="Winner bans 2 stages"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
-                BackgroundColor="Transparent"/>
-            <Button
+                BackgroundColor="Transparent">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Button
+                 BackgroundColor="#d1eefc" 
                 x:Name="CS"
                 Text="Castle Siege"
                 Clicked="CS1"
                  WidthRequest="250"
-                />
-            <Button
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
+                <Button
+                    
+                     BackgroundColor="#d1eefc" 
                 x:Name="Unova"
                 Text="Unova Pokemon League"
                 Clicked="Unova1"
                  WidthRequest="250"
-                />
-            <Button
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button
+                     BackgroundColor="#d1eefc" 
                 x:Name="TC"
                 Text="Town and City"
                 Clicked="TC1"
                  WidthRequest="250"
-                />
-            <Button
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                
+                <Button
+                     BackgroundColor="#d1eefc" 
                 x:Name="YS"
                 Text="Yoshi's Story"
                 Clicked="YS1"
                  WidthRequest="250"
-                />
-            <Button
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button
+                     BackgroundColor="#d1eefc" 
                 x:Name="YI"
                 Text="Yoshi's Island Brawl"
                 Clicked="YI1"
                  WidthRequest="250"
-                />
-            <Button
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button
+                     BackgroundColor="#d1eefc" 
                 x:Name="Kalos"
                 Text="Kalos Pokemon League"
                 Clicked="Kalos1"
                  WidthRequest="250"
-                />
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
 
                 <Button
+                     BackgroundColor="#d1eefc" 
                 x:Name="refreshbutton"
                 Text="Refresh"
+                    
                 Clicked="Refresh"
                  WidthRequest="250"
-                />
+                >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

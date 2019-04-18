@@ -1,83 +1,292 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.RoundRobin">
+             x:Class="App2.RoundRobin"
+             Title="Round Robin Bracket">
     <ContentPage.Content>
-        <StackLayout>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
+        <ScrollView VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Transparent">
+            <StackLayout>
+                <Label Text="Select the winner of each match" HorizontalTextAlignment="Center" VerticalTextAlignment="End">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
 
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
+                    </Grid.RowDefinitions>
 
-                <Button x:Name="Match0A" Text="" Grid.Row="0" Grid.Column="0" Clicked="Match0a" TextColor="Red"/>
-                <Label Text="vs" HorizontalTextAlignment="Center" Grid.Row ="0" Grid.Column="1"></Label>
-                <Button x:Name="Match0B" Text="" Grid.Row="0" Grid.Column="2" Clicked="Match0b" TextColor="Red"/>
-
-                <Button x:Name="Match1A" Text="" Grid.Row="1" Grid.Column="0" Clicked="Match1a" TextColor="Red"/>
-                <Label Text="vs"  HorizontalTextAlignment="Center" Grid.Row ="1" Grid.Column="1"></Label>
-                <Button x:Name="Match1B" Text="" Grid.Row="1" Grid.Column="2" Clicked="Match1b" TextColor="Red"/>
-
-                <Button x:Name="Match2A" Text="" Grid.Row="2" Grid.Column="0" Clicked="Match2a" TextColor="Red"/>
-                <Label Text="vs"  HorizontalTextAlignment="Center" Grid.Row ="2" Grid.Column="1"></Label>
-                <Button x:Name="Match2B" Text="" Grid.Row="2" Grid.Column="2" Clicked="Match2b" TextColor="Red"/>
-
-                <Button x:Name="Match3A" Text="" Grid.Row="3" Grid.Column="0" Clicked="Match3a" TextColor="Red"/>
-                <Label Text="vs"  HorizontalTextAlignment="Center" Grid.Row ="3" Grid.Column="1"></Label>
-                <Button x:Name="Match3B" Text="" Grid.Row="3" Grid.Column="2" Clicked="Match3b" TextColor="Red"/>
-
-                <Button x:Name="Match4A" Text="" Grid.Row="4" Grid.Column="0" Clicked="Match4a" TextColor="Red"/>
-                <Label Text="vs"  HorizontalTextAlignment="Center" Grid.Row ="4" Grid.Column="1"></Label>
-                <Button x:Name="Match4B" Text="" Grid.Row="4" Grid.Column="2" Clicked="Match4b" TextColor="Red"/>
-
-                <Button x:Name="Match5A" Text="" Grid.Row="5" Grid.Column="0" Clicked="Match5a" TextColor="Red"/>
-                <Label Text="vs"  HorizontalTextAlignment="Center" Grid.Row ="5" Grid.Column="1"></Label>
-                <Button x:Name="Match5B" Text="" Grid.Row="5" Grid.Column="2" Clicked="Match5b" TextColor="Red"/>
-
-                <Label Text="Scoreboard" Grid.Row="7"  HorizontalTextAlignment="Center" Grid.Column="0"></Label>
-                <Label Text="Wins" Grid.Row="7"  HorizontalTextAlignment="Center" Grid.Column="1"></Label>
-                <Label Text="Losses" Grid.Row="7"  HorizontalTextAlignment="Center" Grid.Column="2"></Label>
-
-                <Label x:Name="PlayerA" Text="Player1"  HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="8"></Label>
-                <Label x:Name="Wins0" Text=""  HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="8"></Label>
-                <Label x:Name="Losses0" Text=""  HorizontalTextAlignment="Center" Grid.Column="2" Grid.Row="8"></Label>
-
-                <Label x:Name="PlayerB" Text="Player2"  HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="9"></Label>
-                <Label x:Name="Wins1" Text=""  HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="9"></Label>
-                <Label x:Name="Losses1" Text=""  HorizontalTextAlignment="Center" Grid.Column="2" Grid.Row="9"></Label>
-
-                <Label x:Name="PlayerC" Text="Player3"  HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="10"></Label>
-                <Label x:Name="Wins2" Text=""  HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="10"></Label>
-                <Label x:Name="Losses2" Text=""  HorizontalTextAlignment="Center" Grid.Column="2" Grid.Row="10"></Label>
-
-                <Label x:Name="PlayerD" Text="Player4"  HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="11"></Label>
-                <Label x:Name="Wins3" Text=""  HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="11"></Label>
-                <Label x:Name="Losses3" Text=""  HorizontalTextAlignment="Center" Grid.Column="2" Grid.Row="11"></Label>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
 
 
 
-            </Grid>
+                    <Button x:Name="Match0A" Text="" Grid.Row="1" Grid.Column="0" Clicked="Match0a" TextColor="DarkRed">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
+                    <Label Text="vs" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row ="1" Grid.Column="1">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Button x:Name="Match0B" Text="" Grid.Row="1" Grid.Column="2" Clicked="Match0b" TextColor="DarkRed">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
+
+                    <Button x:Name="Match1A" Text="" Grid.Row="2" Grid.Column="0" Clicked="Match1a" TextColor="DarkRed">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
+                    <Label Text="vs"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row ="2" Grid.Column="1">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Button x:Name="Match1B" Text="" Grid.Row="2" Grid.Column="2" Clicked="Match1b" TextColor="DarkRed">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
+
+                    <Button x:Name="Match2A" Text="" Grid.Row="3" Grid.Column="0" Clicked="Match2a" TextColor="DarkRed">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
+                    <Label Text="vs" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Row ="3" Grid.Column="1">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Button x:Name="Match2B" Text="" Grid.Row="3" Grid.Column="2" Clicked="Match2b" TextColor="DarkRed">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
+
+                    <Button x:Name="Match3A" Text="" Grid.Row="4" Grid.Column="0" Clicked="Match3a" TextColor="DarkRed">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
+                    <Label Text="vs" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Row ="4" Grid.Column="1">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Button x:Name="Match3B" Text="" Grid.Row="4" Grid.Column="2" Clicked="Match3b" TextColor="DarkRed">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
+
+                    <Button x:Name="Match4A" Text="" Grid.Row="5" Grid.Column="0" Clicked="Match4a" TextColor="DarkRed">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
+                    <Label Text="vs" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Row ="5" Grid.Column="1">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Button x:Name="Match4B" Text="" Grid.Row="5" Grid.Column="2" Clicked="Match4b" TextColor="DarkRed">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
+
+                    <Button x:Name="Match5A" Text="" Grid.Row="6" Grid.Column="0" Clicked="Match5a" TextColor="DarkRed"/>
+                    <Label Text="vs"  VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row ="6" Grid.Column="1">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Button x:Name="Match5B" Text="" Grid.Row="6" Grid.Column="2" Clicked="Match5b" TextColor="DarkRed">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
+
+                    <Label Text="Scoreboard" VerticalTextAlignment="Center" Grid.Row="7"  HorizontalTextAlignment="Center" Grid.Column="0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label Text="Wins" VerticalTextAlignment="Center" Grid.Row="7"  HorizontalTextAlignment="Center" Grid.Column="1">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label Text="Losses" VerticalTextAlignment="Center" Grid.Row="7"  HorizontalTextAlignment="Center" Grid.Column="2">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label x:Name="PlayerA" VerticalTextAlignment="Center" Text="Player1"  HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="8">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label x:Name="Wins0" Text="" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="8">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label x:Name="Losses0" Text="" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Column="2" Grid.Row="8">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label x:Name="PlayerB" Text="Player2"  VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="9">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label x:Name="Wins1" Text="" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="9">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label x:Name="Losses1" Text="" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Column="2" Grid.Row="9">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label x:Name="PlayerC" Text="Player3" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="10">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label x:Name="Wins2" Text="" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="10">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label x:Name="Losses2" Text=""  VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Column="2" Grid.Row="10">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label x:Name="PlayerD" Text="Player4" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="11">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label x:Name="Wins3" Text="" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="11">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label x:Name="Losses3" Text="" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Column="2" Grid.Row="11">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
 
 
-        </StackLayout>
+
+                </Grid>
+
+                <Button x:Name="reset" Text="Reset Bracket" Clicked="Restart">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

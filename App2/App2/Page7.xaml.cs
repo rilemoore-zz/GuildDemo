@@ -61,6 +61,7 @@ namespace App2
 
             string myPostedEvent = JsonConvert.SerializeObject(gameEvent);
             await App.RestService.PostResponse<string>(Constants.BaseUrl + "/events/new", myPostedEvent);
+            await DisplayAlert("Event Creation Successful", "Your event is now published", "Continue");
         }
 
         /* <DatePicker

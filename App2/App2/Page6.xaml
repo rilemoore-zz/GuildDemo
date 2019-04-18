@@ -16,11 +16,13 @@
                 Text="Smash Ultimate Stage Striker"
                 Clicked="Handle_Clicked"
                  WidthRequest="250"
+                 BackgroundColor="#d1eefc"
                 />
             <Button
                 Text="Bracket Generator"
                 Clicked="Handle_Clicked2"
                  WidthRequest="250"
+                 BackgroundColor="#d1eefc"
                 />
         </StackLayout>
     </ContentPage.Content>

@@ -57,45 +57,45 @@ namespace App2
 
         void BF1(object sender, System.EventArgs e)
         {
-            BF.Text = "";
+            BF.IsEnabled = false;
 
         }
         void FD1(object sender, System.EventArgs e)
         {
-            FD.Text = "";
+            FD.IsEnabled = false;
 
         }
         void SV1(object sender, System.EventArgs e)
         {
-            SV.Text = "";
+            SV.IsEnabled = false;
 
         }
         void PS21(object sender, System.EventArgs e)
         {
-            PS2.Text = "";
+            PS2.IsEnabled = false;
 
         }
         void LC1(object sender, System.EventArgs e)
         {
-            LC.Text = "";
+            LC.IsEnabled = false;
 
         }
 
         void TC1(object sender, System.EventArgs e)
         {
-            TC.Text = "";
+            TC.IsEnabled = false;
         }
         void YS1(object sender, System.EventArgs e)
         {
-            YS.Text = "";
+            YS.IsEnabled = false;
         }
         void YI1(object sender, System.EventArgs e)
         {
-            YI.Text = "";
+            YI.IsEnabled = false;
         }
         void Kalos1(object sender, System.EventArgs e)
         {
-            Kalos.Text = "";
+            Kalos.IsEnabled = false;
         }
         void Refresh(object sender, System.EventArgs e)
         {
@@ -108,6 +108,16 @@ namespace App2
             YS.Text = "Yoshi's Story";
             YI.Text = "Yoshi's Island";
             Kalos.Text = "Kalos Pokemon League";
+            BF.IsEnabled = true;
+            FD.IsEnabled = true;
+            SV.IsEnabled = true;
+            PS2.IsEnabled = true;
+            LC.IsEnabled = true;
+            TC.IsEnabled = true;
+            YS.IsEnabled = true;
+            YI.IsEnabled = true;
+            Kalos.IsEnabled = true;
+
         }
 
     }

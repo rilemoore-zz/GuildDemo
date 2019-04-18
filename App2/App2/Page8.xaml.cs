@@ -30,5 +30,9 @@ namespace App2
             // Put your code here but leaving empty works just fine
         }
 
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+        }
+
     }
 }

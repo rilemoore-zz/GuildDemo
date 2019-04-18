@@ -12,7 +12,8 @@
                 HeightRequest="100"
                 VerticalOptions="Start" 
                 HorizontalOptions="Center" 
-                TextColor="#38393a">
+                TextColor="#38393a"
+                >
                 <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
@@ -28,12 +29,13 @@
                 PlaceholderColor="#A00000"
                 BackgroundColor="Transparent"
                 MaxLength="500" 
-                WidthRequest="500" 
+                WidthRequest="500"
                 />
-            <DatePicker x:Name="Datepick" MinimumDate="{Binding MinDate}"  MaximumDate="{Binding MaxDate}" Date="{Binding SelectedDate}" DateSelected="OnDateSelected">
+            <DatePicker x:Name="Datepick" MinimumDate="{Binding MinDate}"  MaximumDate="{Binding MaxDate}" Date="{Binding SelectedDate}" DateSelected="OnDateSelected" HorizontalOptions="Center" >
                 
             </DatePicker>
-            <TimePicker x:Name="Time">
+           
+            <TimePicker x:Name="Time" HorizontalOptions="Center">
                 
             </TimePicker>
             

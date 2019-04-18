@@ -226,5 +226,37 @@ namespace App2
             Update();
         }
 
+        void Restart(object sender, System.EventArgs e)
+        {
+            Match0A.IsEnabled = true;
+            Match0B.IsEnabled = true;
+            Match1A.IsEnabled = true;
+            Match1B.IsEnabled = true;
+            Match2A.IsEnabled = true;
+            Match2B.IsEnabled = true;
+            Match3A.IsEnabled = true;
+            Match3B.IsEnabled = true;
+            Match4A.IsEnabled = true;
+            Match4B.IsEnabled = true;
+            Match5A.IsEnabled = true;
+            Match5B.IsEnabled = true;
+            for(int i = 0; i < 4; i++)
+            {
+                Constants.Entrants[i].Wins = 0;
+                Constants.Entrants[i].Losses = 0;
+
+            }
+            Wins0.Text = Constants.Entrants[0].Wins.ToString();
+            Losses0.Text = Constants.Entrants[0].Losses.ToString();
+            Wins1.Text = Constants.Entrants[1].Wins.ToString();
+            Losses1.Text = Constants.Entrants[1].Losses.ToString();
+            Wins2.Text = Constants.Entrants[2].Wins.ToString();
+            Losses2.Text = Constants.Entrants[2].Losses.ToString();
+            Wins3.Text = Constants.Entrants[3].Wins.ToString();
+            Losses3.Text = Constants.Entrants[3].Losses.ToString();
+
+
+        }
+
     }
 }
