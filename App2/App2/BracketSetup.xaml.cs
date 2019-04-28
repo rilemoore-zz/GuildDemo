@@ -41,7 +41,7 @@ namespace App2
         async void Handle_ClickedAsync(object sender, System.EventArgs e)
         {
            
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 16; i++)
             {
                 Constants.Entrants.Add(new BracketNames());
             }
@@ -67,27 +67,37 @@ namespace App2
             Constants.Entrants[3].Seed = 4;
             Constants.Entrants[3].Wins = 0;
             Constants.Entrants[3].Losses = 0;
-            //Constants.Entrants[4].Name = Player4.Text;
-            //Constants.Entrants[4].Seed = 5;
-            //Constants.Entrants[4].Wins = 0;
-            //Constants.Entrants[4].Losses = 0;
-            //Constants.Entrants[5].Name = Player5.Text;
-            //Constants.Entrants[5].Seed = 6;
-            //Constants.Entrants[5].Wins = 0;
-            //Constants.Entrants[5].Losses = 0;
-            //Constants.Entrants[6].Name = Player6.Text;
-            //Constants.Entrants[6].Seed = 7;
-            //Constants.Entrants[6].Wins = 0;
-            //Constants.Entrants[6].Losses = 0;
-            //Constants.Entrants[7].Name = Player7.Text;
-            //Constants.Entrants[7].Seed = 8;
-            //Constants.Entrants[7].Wins = 0;
-            //Constants.Entrants[7].Losses = 0;
+            Constants.Entrants[4].Name = Player4.Text;
+            Constants.Entrants[4].Seed = 5;
+            Constants.Entrants[4].Wins = 0;
+            Constants.Entrants[4].Losses = 0;
+            Constants.Entrants[5].Name = Player5.Text;
+            Constants.Entrants[5].Seed = 6;
+            Constants.Entrants[5].Wins = 0;
+            Constants.Entrants[5].Losses = 0;
+            Constants.Entrants[6].Name = Player6.Text;
+            Constants.Entrants[6].Seed = 7;
+            Constants.Entrants[6].Wins = 0;
+            Constants.Entrants[6].Losses = 0;
+            Constants.Entrants[7].Name = Player7.Text;
+            Constants.Entrants[7].Seed = 8;
+            Constants.Entrants[7].Wins = 0;
+            Constants.Entrants[7].Losses = 0;
+
+            Constants.Entrants[8].Name = Player8.Text;
+            Constants.Entrants[9].Name = Player9.Text;
+            Constants.Entrants[10].Name = Player10.Text;
+            Constants.Entrants[11].Name = Player11.Text;
+            Constants.Entrants[12].Name = Player12.Text;
+            Constants.Entrants[13].Name = Player13.Text;
+            Constants.Entrants[14].Name = Player14.Text;
+            Constants.Entrants[15].Name = Player15.Text;
+
             var bracketPage = new DoubleElim
             {
                 BindingContext = Entrant
             };
-            if(Dropdown.SelectedIndex == 0)
+            if(Dropdown.SelectedIndex == 0 && playernum.SelectedIndex ==2)
             {
                 await Navigation.PushAsync(new DoubleElim());
             }
@@ -95,6 +105,21 @@ namespace App2
             {
                 await Navigation.PushAsync(new RoundRobin());
             }
+
+            if(Dropdown.SelectedIndex == 1)
+            {
+                if(playernum.SelectedIndex == 2)
+                {
+                    await Navigation.PushAsync(new SingleElim16());
+                }
+
+                if (playernum.SelectedIndex == 1)
+                {
+                    await Navigation.PushAsync(new SingleElim8());
+                }
+
+            }
+
 
         }
     }

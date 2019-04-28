@@ -45,13 +45,14 @@ namespace App2
         {
             events = await App.RestService.GetResponse<List<GameEvent>>(Constants.LoginUrl);
             Title.Text = events[8].EventTitle;
-            Date.Text = events[8].EventDate;
+            StartDate.Text = events[8].StartDate.ToString();
             StartTime.Text = events[8].StartTime.ToString();
-            EndTime.Text = events[8].EndTime.ToString();
             //UserId.Text = events[8].UserId.ToString();
             Game.Text = events[8].EventGame;
-            Platform.Text = events[8].Platform;
-            //NumPlayers.Text = events[8].numberOfPlayers.ToString();
+            Platform.Text = events[8].Platform.ToString();
+
+
+            // NumPlayers.Text = events[8].numberOfPlayers.ToString();
 
         }
 

@@ -8,8 +8,10 @@ namespace App2.Stuff
     {
         public int initiative;
         public string name;
+        public int AC;
+        public int HP;
         
-        public void Sortyboy(List<InitiativeClass> classlist)
+        public void Sort(List<InitiativeClass> classlist)
         {
             
             bool going = false;
@@ -32,10 +34,18 @@ namespace App2.Stuff
             InitiativeClass temp = new InitiativeClass();
             temp.initiative = a.initiative;
             temp.name = a.name;
+            temp.AC = a.AC;
+            temp.HP = a.HP;
+
             a.initiative = b.initiative;
             a.name = b.name;
+            a.AC = b.AC;
+            a.HP = b.HP;
+
             b.initiative = temp.initiative;
             b.name = temp.name;
+            b.AC = temp.AC;
+            b.HP = temp.HP;
         }
     }
 }

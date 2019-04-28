@@ -8,14 +8,15 @@ using FormsControls.Base;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using App2.Stuff;
+
 namespace App2
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class DoubleElim : ContentPage, IAnimationPage
+	public partial class SingleElim16 : ContentPage, IAnimationPage
     {
-		public DoubleElim ()
+		public SingleElim16 ()
 		{
-            InitializeComponent();
+			InitializeComponent ();
             this.BackgroundImage = "smallbackground.png";
             BindingContext = this;
             one_zero.Text = Constants.Entrants[0].Name;
@@ -34,6 +35,56 @@ namespace App2
             twentythree_zero.Text = Constants.Entrants[9].Name;
             twentysix_zero.Text = Constants.Entrants[1].Name;
             twentyseven_zero.Text = Constants.Entrants[14].Name;
+
+            if(two_zero.Text == "BYE")
+            {
+                three_one.Text = one_zero.Text;
+                one_zero.IsEnabled = false;
+                two_zero.IsEnabled = false;
+            }
+            if (six_zero.Text == "BYE")
+            {
+                four_one.Text = five_zero.Text;
+                five_zero.IsEnabled = false;
+                six_zero.IsEnabled = false;
+            }
+            if (nine_zero.Text == "BYE")
+            {
+                ten_one.Text = eight_zero.Text;
+                eight_zero.IsEnabled = false;
+                nine_zero.IsEnabled = false;
+            }
+            if (thirteen_zero.Text == "BYE")
+            {
+                eleven_one.Text = twelve_zero.Text;
+                twelve_zero.IsEnabled = false;
+                thirteen_zero.IsEnabled = false;
+            }
+            if (sixteen_zero.Text == "BYE")
+            {
+                seventeen_one.Text = fifteen_zero.Text;
+                fifteen_zero.IsEnabled = false;
+                sixteen_zero.IsEnabled = false;
+            }
+            if (twenty_zero.Text == "BYE")
+            {
+                eighteen_one.Text = nineteen_zero.Text;
+                twenty_zero.IsEnabled = false;
+                nineteen_zero.IsEnabled = false;
+            }
+            if (twentythree_zero.Text == "BYE")
+            {
+                twentyfour_one.Text = twentytwo_zero.Text;
+                twentytwo_zero.IsEnabled = false;
+                twentythree_zero.IsEnabled = false;
+            }
+            if (twentyseven_zero.Text == "BYE")
+            {
+                twentyfive_one.Text = twentysix_zero.Text;
+                twentysix_zero.IsEnabled = false;
+                twentyseven_zero.IsEnabled = false;
+            }
+
         }
 
         public IPageAnimation PageAnimation { get; } = new FadePageAnimation { Duration = AnimationDuration.Short, Subtype = AnimationSubtype.FromTop };
@@ -238,7 +289,7 @@ namespace App2
             fourteen_three.Text = twenty_two.Text;
             twenty_two.IsEnabled = false;
             twentytwo_two.IsEnabled = false;
-            
+
         }
 
         void twentytwo_twoa(object sender, System.EventArgs e)
@@ -250,12 +301,25 @@ namespace App2
 
         void thirteen_threea(object sender, System.EventArgs e)
         {
-
+            fourteen_four.Text = thirteen_three.Text;
+            DisplayAlert(fourteen_four.Text + " is your Grand Champion!", "", "Continue");
+            thirteen_three.IsEnabled = false;
+            fourteen_three.IsEnabled = false;
         }
 
         void fourteen_threea(object sender, System.EventArgs e)
         {
-
+            fourteen_four.Text = fourteen_three.Text;
+            DisplayAlert(fourteen_four.Text + " is your Grand Champion!", "", "Continue");
+            thirteen_three.IsEnabled = false;
+            fourteen_three.IsEnabled = false;
+            
         }
+        void fourteen_foura(object sender, System.EventArgs e)
+        {
+            DisplayAlert(fourteen_four.Text + " is your Grand Champion!", "", "Continue");
+        }
+
     }
+
 }

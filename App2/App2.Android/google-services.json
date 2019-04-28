@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "828001393037",
+    "firebase_url": "https://idyllic-pact-238202.firebaseio.com",
+    "project_id": "idyllic-pact-238202",
+    "storage_bucket": "idyllic-pact-238202.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828001393037:android:cfa4cb9d2a6fbe84",
+        "android_client_info": {
+          "package_name": "com.companyname.App2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828001393037-ofeukubtfpcn4g10g7tbscsuaic2iorf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.companyname.App2",
+            "certificate_hash": "8b1b52dd94fa6ef24d04a03c54c4bbf9b66f32e9"
+          }
+        },
+        {
+          "client_id": "828001393037-bo40et3jimuvh5lbdkhnl0lefn8iem6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwFX4fbTNIMDEvVu7Hxmp1aW6t8-114wY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828001393037-bo40et3jimuvh5lbdkhnl0lefn8iem6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

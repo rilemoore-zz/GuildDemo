@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -28,10 +28,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Apis" Version="1.38.2" />
     <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Plugin.GoogleClient" Version="1.1.1" />
     <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
-    <PackageReference Include="Xamarin.Forms" Version="3.5.0.169047" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />
     <PackageReference Include="XForms.Plugin.AnimationNavigationPage" Version="1.0.7" />
   </ItemGroup>
 
@@ -150,5 +152,125 @@
     <EmbeddedResource Update="RoundRobin.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="SingleElim16.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SingleElim8.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="BracketSetup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="DoubleElim.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="EventSearch.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Frostbite.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="LocalCalendar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page18.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page19.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page20.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page21.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page22.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page23.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="page24.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page25.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page26.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page27.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page28.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page29.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page30.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="pages\Page11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="RoundRobin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
   </ItemGroup>
 </Project>

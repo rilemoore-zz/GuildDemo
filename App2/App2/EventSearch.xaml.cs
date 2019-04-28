@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using FormsControls.Base;
+using App2.Stuff;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using FormsControls.Base;
+using Newtonsoft.Json;
 namespace App2
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
@@ -23,6 +24,19 @@ namespace App2
             this.Title.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
         }
 
+        public List<GameEvent> events = new List<GameEvent>();
+        GameEvent xd = new GameEvent();
+
+        async void GetEvents()
+        {
+            events = await App.RestService.GetResponse<List<GameEvent>>(Constants.LoginUrl);
+
+            /*GameEvent GameEvent = new GameEvent();
+            GameEvent.EndTime = "falsdkfjlkasd";
+            string myPostedEvent = JsonConvert.SerializeObject(GameEvent);
+            await App.RestService.PostResponse<string>(Constants.BaseUrl + "/events/new", myPostedEvent);*/
+        }
+
         public IPageAnimation PageAnimation { get; } = new FadePageAnimation { Duration = AnimationDuration.Short, Subtype = AnimationSubtype.FromTop };
 
         public void OnAnimationStarted(bool isPopAnimation)
@@ -37,7 +51,10 @@ namespace App2
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new Page13());
+            
         }
+
+        
+
     }
 }

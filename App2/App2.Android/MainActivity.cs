@@ -14,6 +14,7 @@ using Android.Graphics;
 using System.Net.Http;
 using App2.Stuff;
 using Newtonsoft.Json;
+using Plugin.GoogleClient;
 
 namespace App2.Droid
 {
@@ -36,14 +37,21 @@ namespace App2.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
             base.OnCreate(savedInstanceState);
+            GoogleClientManager.Initialize(this);
             FormsControls.Droid.Main.Init(this);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }
 
+        protected override void OnActivityResult(int requestCode, Result resultCode, Android.Content.Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+            GoogleClientManager.OnAuthCompleted(requestCode, resultCode, data);
+        }
+
         public async Task<Token> PostResponse<Token>(FormUrlEncodedContent content)
         {
-            var weburl = "http://ec2-3-16-150-197.us-east-2.compute.amazonaws.com:8080/events/get";
+            var weburl = "http://ec2-18-216-89-31.us-east-2.compute.amazonaws.com:8080/get/event";
             var response = await client.PostAsync(weburl, content);
             var jsonResult = response.Content.ReadAsStringAsync().Result;
             var token = JsonConvert.DeserializeObject<Token>(jsonResult);

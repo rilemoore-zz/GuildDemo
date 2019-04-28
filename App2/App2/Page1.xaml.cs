@@ -47,9 +47,9 @@ namespace App2
         async void GetEvents()
         {
             events = await App.RestService.GetResponse<List<GameEvent>>(Constants.LoginUrl);
-            GameEvent gameEvent = new GameEvent();
-            gameEvent.EndTime = "falsdkfjlkasd";
-            string myPostedEvent = JsonConvert.SerializeObject(gameEvent);
+            GameEvent GameEvent = new GameEvent();
+            GameEvent.EndTime = "falsdkfjlkasd";
+            string myPostedEvent = JsonConvert.SerializeObject(GameEvent);
             await App.RestService.PostResponse<string>(Constants.BaseUrl + "/events/new", myPostedEvent);
         }*/
 

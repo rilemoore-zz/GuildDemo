@@ -43,24 +43,52 @@ namespace App2
         {
             PostEvent();
         }
+        void Handle_Clicked2(object sender, System.EventArgs e)
+        {
+            var date = Datepick.Date;
+            var time = TimePick.Time;
+            //Testbutton.Text = string.Format("{0}", date);
+            Testbutton.Text = string.Format("{0}", time);
+            //Testbutton.Text = ReturnTime(Testbutton.Text);
+        }
         void OnDateSelected(object sender, DateChangedEventArgs e)
         {
-            Platform.Text = e.NewDate.ToString();
+            //Platform.Text = e.NewDate.ToString();
         }
+
+        string ReturnDate(string oldString)
+        {
+            string newstring = oldString.Substring(0, 10);
+            return newstring;
+        }
+
+        string ReturnTime(string oldString)
+        {
+            string newstring = oldString.Substring(21, 26);
+
+
+            return newstring;
+        }
+
         async void PostEvent()
         {
+            var date = Datepick.Date;
+            var time = TimePick.Time;
+            string datetime = string.Format("{0} \n {1}", date, time);
+            string timestring = string.Format("{0}", time);
+
             GameEvent gameEvent = new GameEvent();
             gameEvent.EventTitle = EventTitle.Text;
-            gameEvent.EndTime = int.Parse(EndTime.Text);
-            gameEvent.StartTime = int.Parse(StartTime.Text);
-            gameEvent.EventDate = Date.Text;
+            gameEvent.StartDate = ReturnDate(datetime);
+            gameEvent.StartTime = timestring;
             gameEvent.UserId = int.Parse(UserID.Text);
             gameEvent.EventGame = Game.Text;
             gameEvent.Platform = Platform.Text;
             gameEvent.numberOfPlayers = int.Parse(NumPlayers.Text);
-
+            gameEvent.Public = "1";
+            gameEvent.Notes = "Note Test";
             string myPostedEvent = JsonConvert.SerializeObject(gameEvent);
-            await App.RestService.PostResponse<string>(Constants.BaseUrl + "/events/new", myPostedEvent);
+            await App.RestService.PostResponse<string>(Constants.BaseUrl, myPostedEvent);
             await DisplayAlert("Event Creation Successful", "Your event is now published", "Continue");
         }
 

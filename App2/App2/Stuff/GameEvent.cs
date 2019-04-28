@@ -9,14 +9,11 @@ namespace App2.Stuff
     {
         public List<GameEvent> events;
 
-        [JsonProperty("Event  Title")]
+        [JsonProperty("Title")]
         public string EventTitle;
 
-        [JsonProperty("End Time")]
-        public int EndTime;
-
-        [JsonProperty("Event Date")]
-        public string EventDate;
+        [JsonProperty("Notes")]
+        public string Notes;
 
         [JsonProperty("User ID")]
         public int UserId;
@@ -24,8 +21,11 @@ namespace App2.Stuff
         [JsonProperty("Event Game")]
         public string EventGame;
 
+        [JsonProperty("Start Date")]
+        public string StartDate;
+
         [JsonProperty("Start Time")]
-        public int StartTime;
+        public string StartTime;
 
         [JsonProperty("Platform")]
         public string Platform;
@@ -33,7 +33,10 @@ namespace App2.Stuff
         [JsonProperty("Number of Players")]
         public int numberOfPlayers;
 
-       /* [JsonProperty("Event ID")]
-        public string eventId;*/
+        [JsonProperty("Public")]
+        public string Public;
+
+         [JsonProperty("Event ID")]
+         public int eventId;
     }
 }

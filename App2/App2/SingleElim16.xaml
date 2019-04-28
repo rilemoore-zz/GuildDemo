@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.DoubleElim"
-             Title="Double Elim">
+             x:Class="App2.SingleElim16">
     <ContentPage.Content>
-        
+
         <ScrollView VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Orientation="Both">
             <StackLayout VerticalOptions="Start" BackgroundColor="Transparent" >
                 <Grid>
@@ -80,21 +79,34 @@
                         </Label.FontFamily>
                     </Label>
 
+                    <Label Text="Grand Champion!"
+                   TextColor="Brown"
+                           Grid.Column="4"
+                           Grid.Row="13"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
                     <Button Grid.Row="1" x:Name="one_zero" Text="test" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="one_zeroa">
-                    <Button.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
-                        </OnPlatform>
-                    </Button.FontFamily>
-                </Button>
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
 
                     <Button Grid.Row="2"  x:Name="two_zero" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="two_zeroa">
-                    <Button.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
-                        </OnPlatform>
-                    </Button.FontFamily>
-                </Button>
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
 
                     <Button Grid.Row="3"  Grid.Column="1" x:Name="three_one" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="three_onea">
                         <Button.FontFamily>
@@ -105,20 +117,20 @@
                     </Button>
 
                     <Button Grid.Row="4"  Grid.Column="1"  x:Name="four_one" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250"  Clicked="four_onea">
-                    <Button.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
-                        </OnPlatform>
-                    </Button.FontFamily>
-                </Button>
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
 
                     <Button Grid.Row="5"  x:Name="five_zero" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="five_zeroa">
-                    <Button.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
-                        </OnPlatform>
-                    </Button.FontFamily>
-                </Button>
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
                     <Button Grid.Row="6"  x:Name="six_zero" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="six_zeroa">
                         <Button.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
@@ -127,27 +139,27 @@
                         </Button.FontFamily>
                     </Button>
                     <Button  Grid.Row="10" Grid.Column="1" x:Name="ten_one" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="ten_onea">
-                    <Button.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
-                        </OnPlatform>
-                    </Button.FontFamily>
-                </Button>
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
 
                     <Button  Grid.Row="8"  x:Name="eight_zero" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="eight_zeroa">
-                    <Button.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
-                        </OnPlatform>
-                    </Button.FontFamily>
-                </Button>
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
                     <Button  Grid.Row="9" x:Name="nine_zero" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="nine_zeroa">
-                    <Button.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
-                        </OnPlatform>
-                    </Button.FontFamily>
-                </Button>
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
 
                     <Button  Grid.Row="11" Grid.Column="1" x:Name="eleven_one" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="eleven_onea">
                         <Button.FontFamily>
@@ -160,12 +172,12 @@
 
 
                     <Button  Grid.Row="12" x:Name="twelve_zero" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="twelve_zeroa">
-                    <Button.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
-                        </OnPlatform>
-                    </Button.FontFamily>
-                </Button>
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
 
                     <Button  Grid.Row="13" x:Name="thirteen_zero" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="thirteen_zeroa">
                         <Button.FontFamily>
@@ -312,6 +324,14 @@
                     </Button>
 
                     <Button Grid.Row="14" Grid.Column="3"  x:Name="fourteen_three" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="fourteen_threea">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                            </OnPlatform>
+                        </Button.FontFamily>
+                    </Button>
+
+                    <Button Grid.Row="14" Grid.Column="4"  x:Name="fourteen_four" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="fourteen_foura">
                         <Button.FontFamily>
                             <OnPlatform x:TypeArguments="x:String">
                                 <On Platform="Android" Value="Mairon.ttf#Mairon"/>

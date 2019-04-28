@@ -55,10 +55,13 @@
     <PackageReference Include="Karamunting.Android.Pantrif.EasySplashScreen">
       <Version>0.0.1</Version>
     </PackageReference>
+    <PackageReference Include="Plugin.GoogleClient">
+      <Version>1.1.1</Version>
+    </PackageReference>
     <PackageReference Include="sqlite-net-pcl">
       <Version>1.5.231</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="3.5.0.169047" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.1" />
@@ -76,6 +79,7 @@
     <AndroidAsset Include="Assets\DarksSkyrimFont.ttf" />
     <AndroidAsset Include="Assets\Dungeon.ttf" />
     <AndroidAsset Include="Assets\Mairon.ttf" />
+    <None Include="google-services.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -104,7 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App2\App2.csproj">
-      <Project>{04C7B36E-3860-4891-981F-EFE6FBA89B66}</Project>
+      <Project>{8F56DE78-2238-4482-8ED5-2D487825B1E9}</Project>
       <Name>App2</Name>
     </ProjectReference>
   </ItemGroup>

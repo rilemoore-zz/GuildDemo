@@ -16,17 +16,6 @@
                 </Label.FontFamily>
             </Label>
 
-
-                <Label x:Name="Date" Text="N/A"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand">
-                    <Label.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
-                        </OnPlatform>
-                    </Label.FontFamily>
-                </Label>
-
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -40,7 +29,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Label x:Name="StartTime" Text="N/A"
+                <Label x:Name="StartDate" Text="N/A"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                        Grid.Column="0"
@@ -54,10 +43,10 @@
                 </Label>
 
                 <Label Text="-" Grid.Column="1" Grid.Row="0">
-                    
+
                 </Label>
-                
-                <Label x:Name="EndTime" Text="N/A"
+
+                <Label x:Name="StartTime" Text="N/A"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                        Grid.Row="0"
@@ -73,23 +62,33 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                        FontSize="Large">
-                    <Label.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
-                        </OnPlatform>
-                    </Label.FontFamily>
-                </Label>
-                
-                <Label x:Name="Platform" Text="N/A"
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <Label x:Name="Platform" Text="N/A"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand">
-                    <Label.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
-                        </OnPlatform>
-                    </Label.FontFamily>
-                </Label>
-               
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--<Label x:Name="GameID" Text="N/A"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>-->
+
 
         </StackLayout>
     </ContentPage.Content>

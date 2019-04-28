@@ -99,6 +99,11 @@
                         </OnPlatform>
                     </Button.FontFamily>
                 </Button>
+                <Label></Label>
+                <Label></Label>
+                <Label></Label>
+                <Label></Label>
+            
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -31,11 +31,11 @@
                 MaxLength="500" 
                 WidthRequest="500"
                 />
-            <DatePicker x:Name="Datepick" MinimumDate="{Binding MinDate}"  MaximumDate="{Binding MaxDate}" Date="{Binding SelectedDate}" DateSelected="OnDateSelected" HorizontalOptions="Center" >
+            <DatePicker x:Name="Datepick" Format="yyyy/dd/mm">
                 
             </DatePicker>
            
-            <TimePicker x:Name="Time" HorizontalOptions="Center">
+            <TimePicker x:Name="TimePick" HorizontalOptions="Center">
                 
             </TimePicker>
             
@@ -113,6 +113,14 @@
                 />
 
                 <Button Text="Create Event" Clicked="Handle_Clicked" CornerRadius="50" BackgroundColor="#d1eefc" Opacity="1" WidthRequest="250">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+
+                <Button x:Name="Testbutton" Text="test date time" Clicked="Handle_Clicked2" CornerRadius="50" BackgroundColor="#d1eefc" Opacity="1" WidthRequest="250">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android" Value="Mairon.ttf#Mairon"/>
