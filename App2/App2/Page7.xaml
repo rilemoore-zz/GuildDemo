@@ -38,50 +38,13 @@
             <TimePicker x:Name="TimePick" HorizontalOptions="Center">
                 
             </TimePicker>
-            
-            <Entry
-                x:Name="StartTime"
-                HorizontalTextAlignment="Center"
-                VerticalOptions="Start"
-                HorizontalOptions="Center"
-                Placeholder="Enter Event Start Time"
-                PlaceholderColor="#A00000"
-                BackgroundColor="Transparent"
-                MaxLength="500" 
-                WidthRequest="500"
-                Keyboard="Numeric" />
-            <Entry
-                x:Name="EndTime"
-                HorizontalTextAlignment="Center"
-                VerticalOptions="Start"
-                HorizontalOptions="Center"
-                Placeholder="Enter Event End Time"
-                PlaceholderColor="#A00000"
-                BackgroundColor="Transparent"
-                MaxLength="500" 
-                WidthRequest="500" 
-                Keyboard="Numeric" />
+
 
 
             <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
-            <Entry
-                x:Name="Date"
-                Placeholder="Enter Event Date"
-                PlaceholderColor="#A00000"
-                HorizontalTextAlignment="Center"
-                BackgroundColor="Transparent"
-                MaxLength="100" 
-                WidthRequest="100" />
+
                 
-            <Entry
-                x:Name="UserID"
-                Placeholder="Enter User ID"
-                PlaceholderColor="#A00000"
-                BackgroundColor="Transparent"
-                HorizontalTextAlignment="Center"
-                MaxLength="100" 
-                WidthRequest="100"
-                Keyboard="Numeric"/>
+
 
                 <Entry
                 x:Name="Game"
@@ -111,6 +74,13 @@
                 MaxLength="100" 
                 WidthRequest="100"
                 />
+
+                <Picker x:Name="PublicPicker" Title="Public or Private">
+                    <Picker.Items>
+                        <x:String>Private</x:String>
+                        <x:String>Public</x:String>
+                    </Picker.Items>
+                </Picker>
 
                 <Button Text="Create Event" Clicked="Handle_Clicked" CornerRadius="50" BackgroundColor="#d1eefc" Opacity="1" WidthRequest="250">
                     <Button.FontFamily>

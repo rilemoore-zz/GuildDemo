@@ -3,27 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.Page6"
              BackgroundColor="Transparent"
-             Title="LAN Gaming">
+             Title="Tournament Tools">
     
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
-            <Label 
-                Text="LAN Game Tools"
-                TextColor="Brown"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
             <Button
                 Text="Smash Ultimate Stage Striker"
                 Clicked="Handle_Clicked"
                  WidthRequest="250"
                  BackgroundColor="#d1eefc"
-                />
+                                >
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
             <Button
                 Text="Bracket Generator"
                 Clicked="Handle_Clicked2"
                  WidthRequest="250"
                  BackgroundColor="#d1eefc"
-                />
+                                >
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

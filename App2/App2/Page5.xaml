@@ -6,21 +6,29 @@
              Title="Card Games">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
-            <Label 
-                Text="CCG Tools"
-                TextColor="Brown"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
             <Button
                 Text="Yu-gi-oh"
                 Clicked="Handle_Clicked"
                  WidthRequest="250"
-                />
+                                >
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+            
             <Button
                 Text="Magic the Gathering"
                 Clicked="Handle_Clicked2"
                  WidthRequest="250"
-                />
+                >
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -12,10 +12,10 @@ using Newtonsoft.Json;
 namespace App2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page11 : ContentPage, IAnimationPage
+    public partial class SearchedEvents : ContentPage, IAnimationPage
     {
         static RestService restService;
-        public Page11()
+        public SearchedEvents()
         {
             InitializeComponent();
             Constants.SearchEvents = true;
@@ -27,8 +27,8 @@ namespace App2
        // public List<GameEvent> events = new List<GameEvent>();
         async void GetEvents()
         {
-            //events = await App.RestService.GetResponse<List<GameEvent>>(Constants.LoginUrl);
-            Constants.events = Constants.RegisteredEvents;
+            Constants.events = Constants.SearchedEvents;
+
             /*GameEvent GameEvent = new GameEvent();
             GameEvent.EndTime = "falsdkfjlkasd";
             string myPostedEvent = JsonConvert.SerializeObject(GameEvent);

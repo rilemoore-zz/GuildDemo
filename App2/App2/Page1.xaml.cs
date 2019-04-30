@@ -64,11 +64,11 @@ namespace App2
         }
         void Handle_Clicked3(object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new Page8());
+            Navigation.PushAsync(new CalendarTest());
         }
         void Handle_Clicked4(object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new Page9());
+            Navigation.PushAsync(new Profile());
         }
 
     }

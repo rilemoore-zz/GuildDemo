@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FormsControls.Base;
-using App2.Stuff;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Newtonsoft.Json;
+using FormsControls.Base;
+using App2.Stuff;
+
 namespace App2
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Page13 : ContentPage, IAnimationPage
+	public partial class EventSearch : ContentPage, IAnimationPage
     {
-		public Page13 ()
+		public EventSearch()
 		{
 			InitializeComponent ();
             this.BackgroundImage = "smallbackground.png";
@@ -22,19 +23,6 @@ namespace App2
         {
             base.OnAppearing();
             this.Title.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
-        }
-
-        public List<GameEvent> events = new List<GameEvent>();
-        GameEvent xd = new GameEvent();
-
-        async void GetEvents()
-        {
-            events = await App.RestService.GetResponse<List<GameEvent>>(Constants.LoginUrl);
-
-            /*GameEvent GameEvent = new GameEvent();
-            GameEvent.EndTime = "falsdkfjlkasd";
-            string myPostedEvent = JsonConvert.SerializeObject(GameEvent);
-            await App.RestService.PostResponse<string>(Constants.BaseUrl + "/events/new", myPostedEvent);*/
         }
 
         public IPageAnimation PageAnimation { get; } = new FadePageAnimation { Duration = AnimationDuration.Short, Subtype = AnimationSubtype.FromTop };
@@ -49,12 +37,54 @@ namespace App2
             // Put your code here but leaving empty works just fine
         }
 
-        void Handle_Clicked(object sender, System.EventArgs e)
+        public List<GameEvent> events = new List<GameEvent>();
+        GameEvent xd = new GameEvent();
+
+        async void SearchByPlatform(object sender, System.EventArgs e)
         {
-            
+            Constants.SearchedEvents = await App.RestService.GetResponse<List<GameEvent>>(Constants.SearchUrl +"/platform/" + Platform.Text);
+            for (int i = 0; i < Constants.SearchedEvents.Count; i++)
+            {
+                if (Constants.SearchedEvents[i].Public == 0)
+                {
+                    Constants.SearchedEvents.Remove(Constants.SearchedEvents[i]);
+                }
+            }
+            await Navigation.PushAsync(new SearchedEvents());
         }
 
-        
+        async void SearchByGameName(object sender, System.EventArgs e)
+        {
+            Constants.SearchedEvents = await App.RestService.GetResponse<List<GameEvent>>(Constants.SearchUrl + "/game/" + GameName.Text);
+            for (int i = 0; i < Constants.SearchedEvents.Count; i++)
+            {
+                if (Constants.SearchedEvents[i].Public == 0)
+                {
+                    Constants.SearchedEvents.Remove(Constants.SearchedEvents[i]);
+                }
+            }
+            await Navigation.PushAsync(new SearchedEvents());
+        }
+
+        async void SearchByEventName(object sender, System.EventArgs e)
+        {
+            Constants.SearchedEvents = await App.RestService.GetResponse<List<GameEvent>>(Constants.SearchUrl + "/title/" + EventName.Text);
+            for (int i = 0; i < Constants.SearchedEvents.Count; i++)
+            {
+                if (Constants.SearchedEvents[i].Public == 0)
+                {
+                    Constants.SearchedEvents.Remove(Constants.SearchedEvents[i]);
+                }
+            }
+            await Navigation.PushAsync(new SearchedEvents());
+        }
+
+        async void SearchAll(object sender, System.EventArgs e)
+        {
+            Constants.SearchedEvents = await App.RestService.GetResponse<List<GameEvent>>(Constants.LoginUrl + "/public");
+
+            await Navigation.PushAsync(new SearchedEvents());
+        }
 
     }
 }

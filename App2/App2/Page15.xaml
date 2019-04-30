@@ -13,7 +13,7 @@
                     </OnPlatform>
                 </Button.FontFamily>
             </Button>
-            <Button Text="Initiative Tracker" Clicked="Handle_Clicked2" BackgroundColor="#d1eefc" Opacity="1">
+            <Button Text="DND Assistant" Clicked="Handle_Clicked2" BackgroundColor="#d1eefc" Opacity="1">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>

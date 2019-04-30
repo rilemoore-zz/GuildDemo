@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using FormsControls.Base;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using App2.Stuff;
+using App2.pages;
 
 namespace App2
 {
@@ -53,7 +55,19 @@ namespace App2
 
         void Handle_Clicked5(object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new Page13());
+            Navigation.PushAsync(new MyEventsList());
         }
+
+
+        void Handle_Clicked6(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new EventSearch());
+        }
+
+        void Handle_Clicked7(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new PendingEventInvites());
+        }
+
     }
 }

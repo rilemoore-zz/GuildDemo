@@ -9,26 +9,26 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Newtonsoft.Json;
 
-namespace App2
+namespace App2.pages
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page11 : ContentPage, IAnimationPage
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class PendingEventInvites : ContentPage, IAnimationPage
     {
-        static RestService restService;
-        public Page11()
-        {
-            InitializeComponent();
-            Constants.SearchEvents = true;
-            Constants.MyEvents = false;
-            Constants.RegEvents = false;
+		public PendingEventInvites ()
+		{
+			InitializeComponent ();
             this.BackgroundImage = "smallbackground.png";
         }
 
-       // public List<GameEvent> events = new List<GameEvent>();
+        static RestService restService;
+
+
+        // public List<GameEvent> events = new List<GameEvent>();
         async void GetEvents()
         {
-            //events = await App.RestService.GetResponse<List<GameEvent>>(Constants.LoginUrl);
-            Constants.events = Constants.RegisteredEvents;
+            Constants.InviteEvents = await App.RestService.GetResponse<List<GameEvent>>(Constants.ActualBaseUrl + "/attendee/events/" + Constants.CurrentUser.ID);
+            Constants.events = Constants.InviteEvents;
+
             /*GameEvent GameEvent = new GameEvent();
             GameEvent.EndTime = "falsdkfjlkasd";
             string myPostedEvent = JsonConvert.SerializeObject(GameEvent);
@@ -111,8 +111,8 @@ namespace App2
 
         void Handle_ClickedA(object sender, System.EventArgs e)
         {
-            if(Constants.events.Count>0)
-            Navigation.PushAsync(new Page20());
+            if (Constants.events.Count > 0)
+                Navigation.PushAsync(new Page20());
         }
 
         void Handle_ClickedB(object sender, System.EventArgs e)
@@ -186,6 +186,5 @@ namespace App2
         {
             // Put your code here but leaving empty works just fine
         }
-
     }
 }

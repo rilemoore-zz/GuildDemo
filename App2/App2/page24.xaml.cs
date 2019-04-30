@@ -40,20 +40,66 @@ namespace App2
             //this.Title.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
         }
 
-        public List<GameEvent> events = new List<GameEvent>();
+        //public List<GameEvent> events = new List<GameEvent>();
         async void GetEvents()
         {
-            events = await App.RestService.GetResponse<List<GameEvent>>(Constants.LoginUrl);
-            Title.Text = events[4].EventTitle;
-            StartDate.Text = events[4].StartDate.ToString();
-            StartTime.Text = events[4].StartTime.ToString();
-            //UserId.Text = events[0].UserId.ToString();
-            Game.Text = events[4].EventGame;
-            Platform.Text = events[4].Platform.ToString();
+            //events = await App.RestService.GetResponse<List<GameEvent>>(Constants.LoginUrl);
+            Title.Text = Constants.events[4].EventTitle;
+            StartDate.Text = Constants.events[4].StartDate.ToString();
+            StartTime.Text = Constants.events[4].StartTime.ToString();
+            //UserId.Text = events[4].UserId.ToString();
+            Game.Text = Constants.events[4].EventGame;
+            Platform.Text = Constants.events[4].Platform.ToString();
 
 
-            // NumPlayers.Text = events[0].numberOfPlayers.ToString();
+            // NumPlayers.Text = events[4].numberOfPlayers.ToString();
 
+        }
+
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            if (Constants.RegisteredEvents.Contains(Constants.events[4]))
+            {
+                DisplayAlert("Error", "Event Already Registered", "Ok");
+            }
+            else
+            {
+                Constants.RegisteredEvents.Add(Constants.events[4]);
+            }
+
+
+        }
+
+        async void Del(object sender, System.EventArgs e)
+        {
+
+            if (Constants.CurrentUser.ID == Constants.events[4].UserId)
+            {
+                string myPostedEvent = JsonConvert.SerializeObject(Constants.events[4]);
+                await App.RestService.PostResponse<string>(Constants.ActualBaseUrl + "/delete/event", myPostedEvent);
+                await DisplayAlert("Event deletion Successful", "Your event is now deleted", "Continue");
+                Constants.events.Remove(Constants.events[4]);
+            }
+
+            else
+            {
+                await DisplayAlert("Permission Denied", "You do not own this event", "Ok");
+            }
+        }
+
+        async void Inv(object sender, System.EventArgs e)
+        {
+            if (Constants.CurrentUser.ID == Constants.events[4].UserId)
+            {
+                AttendeeClass newattendee = new AttendeeClass();
+                newattendee.EventID = Constants.events[4].eventId;
+                string myAttendeeList = JsonConvert.SerializeObject(newattendee);
+                await App.RestService.PostResponse<string>(Constants.ActualBaseUrl + "/create/attendeelist/" + InvitedUser.Text, myAttendeeList);
+            }
+            else
+            {
+                await DisplayAlert("Permission Denied", "You do not own this event", "Ok");
+            }
         }
 
     }

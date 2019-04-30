@@ -81,11 +81,11 @@ namespace App2
             gameEvent.EventTitle = EventTitle.Text;
             gameEvent.StartDate = ReturnDate(datetime);
             gameEvent.StartTime = timestring;
-            gameEvent.UserId = int.Parse(UserID.Text);
+            gameEvent.UserId =  Constants.CurrentUser.ID;
             gameEvent.EventGame = Game.Text;
             gameEvent.Platform = Platform.Text;
             gameEvent.numberOfPlayers = int.Parse(NumPlayers.Text);
-            gameEvent.Public = "1";
+            gameEvent.Public = PublicPicker.SelectedIndex;
             gameEvent.Notes = "Note Test";
             string myPostedEvent = JsonConvert.SerializeObject(gameEvent);
             await App.RestService.PostResponse<string>(Constants.BaseUrl, myPostedEvent);

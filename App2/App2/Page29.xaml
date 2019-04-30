@@ -89,6 +89,33 @@
                 </Label.FontFamily>
             </Label>
 
+            <Entry Placeholder="Enter Users to invite" x:Name="InvitedUser">
+
+            </Entry>
+
+            <Button x:Name="RegisterButton" Text="Register" Clicked="Handle_Clicked" >
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+
+            <Button x:Name="InviteButton" Text="Invite Users" Clicked="Inv" >
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+
+            <Button x:Name="DeleteButton" Text="Delete Event" Clicked="Del" >
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
 
         </StackLayout>
     </ContentPage.Content>

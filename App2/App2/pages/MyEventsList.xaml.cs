@@ -9,26 +9,28 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Newtonsoft.Json;
 
-namespace App2
+namespace App2.pages
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page11 : ContentPage, IAnimationPage
-    {
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class MyEventsList : ContentPage
+	{
         static RestService restService;
-        public Page11()
+        public MyEventsList()
         {
             InitializeComponent();
+            GetEvents();
             Constants.SearchEvents = true;
             Constants.MyEvents = false;
             Constants.RegEvents = false;
             this.BackgroundImage = "smallbackground.png";
         }
 
-       // public List<GameEvent> events = new List<GameEvent>();
+        // public List<GameEvent> events = new List<GameEvent>();
         async void GetEvents()
         {
             //events = await App.RestService.GetResponse<List<GameEvent>>(Constants.LoginUrl);
-            Constants.events = Constants.RegisteredEvents;
+            Constants.CreatedEvents = await App.RestService.GetResponse<List<GameEvent>>(Constants.LoginUrl + "/" + Constants.CurrentUser.ID);
+            Constants.events = Constants.CreatedEvents;
             /*GameEvent GameEvent = new GameEvent();
             GameEvent.EndTime = "falsdkfjlkasd";
             string myPostedEvent = JsonConvert.SerializeObject(GameEvent);
@@ -111,8 +113,8 @@ namespace App2
 
         void Handle_ClickedA(object sender, System.EventArgs e)
         {
-            if(Constants.events.Count>0)
-            Navigation.PushAsync(new Page20());
+            if (Constants.events.Count > 0)
+                Navigation.PushAsync(new Page20());
         }
 
         void Handle_ClickedB(object sender, System.EventArgs e)
@@ -186,6 +188,5 @@ namespace App2
         {
             // Put your code here but leaving empty works just fine
         }
-
     }
 }

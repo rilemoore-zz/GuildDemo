@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Profile">
+    <ContentPage.Content HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" Orientation="Vertical" Opacity="1">
+        <StackLayout>
+            <Label x:Name="Username" Text="Username" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="#38393a">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <Label x:Name="Name" Text="Name" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="#38393a">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <Label x:Name="Email" Text="Email" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="#38393a">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <Label x:Name="Bio" Text="Bio" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"  TextColor="#38393a">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" >
+                        <On Platform ="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -34,7 +34,7 @@ namespace App2.Stuff
         public int numberOfPlayers;
 
         [JsonProperty("Public")]
-        public string Public;
+        public int Public;
 
          [JsonProperty("Event ID")]
          public int eventId;

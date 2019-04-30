@@ -19,6 +19,9 @@ namespace App2
             
             this.BackgroundImage = "smallbackground.png";
         }
+
+        public List<UserClass> UserList = new List<UserClass>();
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
@@ -40,29 +43,39 @@ namespace App2
         async void Handle_Clicked(object sender, System.EventArgs e)
         {
             //if(!Entry_Username.Text.Equals("") && !Entry_Password.Text.Equals(""))
-            
-                User user = new User(Entry_Username.Text, Entry_Password.Text);
-                if (user.CheckInfo())
-                {
-                //DisplayAlert("Login", "Login Success", "Ok");
-                /*var result = await App.RestService.Login(user);
-                if(result!=null)
-                {
-                    App.UserDatabase.SaveUser(user);
-                }*/
+
+            UserClass NewUser = new UserClass();
+
+            NewUser.UserName = Entry_Username.Text;
+            NewUser.UserPassword = Entry_Password.Text;
+           // bool LogInSuccess = false;
+           // int truefalse;
+            UserList = await App.RestService.GetResponse<List<UserClass>>(Constants.CheckLoginURL + "/" + NewUser.UserName +"/" + NewUser.UserPassword);
+            Constants.CurrentUser = UserList[0];
+            if (UserList[0].UserName == Entry_Username.Text)
+            {
                 await Navigation.PushAsync(new Page1());
-                }
-                else
-                {
+            }
+            else
+            {
                 await DisplayAlert("Login", "Login Not Correct", "Ok");
-                }
-            
+            }
+            //User user = new User(Entry_Username.Text, Entry_Password.Text);
+            //if (user.CheckInfo())
+            //{
+            //await Navigation.PushAsync(new Page1());
+            //}
+            //else
+            //{
+            //await DisplayAlert("Login", "Login Not Correct", "Ok");
+            //}
+
 
         }
 
         async void Handle_Clicked2(object sender, System.EventArgs e)
         {
-
+            await Navigation.PushAsync(new RegisterPage());
         }
 
 

@@ -21,20 +21,37 @@
                 </Button.FontFamily>
             </Button>
 
-            <Button Text="My Events" Clicked="Handle_Clicked4" BackgroundColor="#d1eefc" CornerRadius="50"  WidthRequest="250">
+            <Button Text="Registered Events" Clicked="Handle_Clicked4" BackgroundColor="#d1eefc" CornerRadius="50"  WidthRequest="250">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                     </OnPlatform>
                 </Button.FontFamily>
             </Button>
-            <Button Text="Search Public Events" Clicked="Handle_Clicked5" BackgroundColor="#d1eefc" CornerRadius="50" WidthRequest="250">
+            <Button Text="Search Public Events" Clicked="Handle_Clicked6" BackgroundColor="#d1eefc" CornerRadius="50" WidthRequest="250">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                     </OnPlatform>
                 </Button.FontFamily>
             </Button>
+
+            <Button Text="Edit My Events" Clicked="Handle_Clicked5" BackgroundColor="#d1eefc" CornerRadius="50" WidthRequest="250">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+
+            <Button Text="Invited Events" Clicked="Handle_Clicked7" BackgroundColor="#d1eefc" CornerRadius="50" WidthRequest="250">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+
             <Button Text="Back to Menu" Clicked="Handle_Clicked2" BackgroundColor="#d1eefc" CornerRadius="50" WidthRequest="250">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
