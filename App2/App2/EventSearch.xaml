@@ -58,13 +58,7 @@
                 VerticalOptions="Start"
                 HorizontalOptions="Center"
                 />
-            <Button Text="Search by Game" Clicked="SearchByGameName" HorizontalOptions="Center" WidthRequest="250">
-                <Button.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
-                    </OnPlatform>
-                </Button.FontFamily>
-            </Button>
+
             <Button Text="Search by Event Name" Clicked="SearchByEventName" HorizontalOptions="Center" WidthRequest="250">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
@@ -73,6 +67,14 @@
                 </Button.FontFamily>
             </Button>
             <Button Text="Search by Platform" Clicked="SearchByPlatform" HorizontalOptions="Center" WidthRequest="250">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+
+            <Button Text="Search by Game" Clicked="SearchByGameName" HorizontalOptions="Center" WidthRequest="250">
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="Mairon.ttf#Mairon"/>

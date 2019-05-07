@@ -48,7 +48,7 @@ namespace App2
             var date = Datepick.Date;
             var time = TimePick.Time;
             //Testbutton.Text = string.Format("{0}", date);
-            Testbutton.Text = string.Format("{0}", time);
+
             //Testbutton.Text = ReturnTime(Testbutton.Text);
         }
         void OnDateSelected(object sender, DateChangedEventArgs e)

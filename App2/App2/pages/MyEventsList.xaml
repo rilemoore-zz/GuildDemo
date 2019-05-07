@@ -1,15 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.pages.MyEventsList">
+             x:Class="App2.pages.MyEventsList"
+             Title="My Events">
     <ContentPage.Content>
-        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
-            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="Transparent" >
+        <ScrollView VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent">
+            <StackLayout VerticalOptions="StartAndExpand" BackgroundColor="Transparent" >
                 <Label Text=""
                    TextColor="Brown"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-                <Button x:Name="a" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedA">
+
+                <Button Text="Update Events" Clicked ="Handle_Clicked" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" IsVisible="True">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android" Value="Mairon.ttf#Mairon"/>
@@ -17,70 +19,80 @@
                     </Button.FontFamily>
                 </Button>
 
-                <Button x:Name="b" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedB">
+                <Label></Label>
+
+                <Button x:Name="a" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedA" IsVisible="False">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                         </OnPlatform>
                     </Button.FontFamily>
                 </Button>
-                <Button x:Name="c" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250"  Clicked="Handle_ClickedC">
+
+                <Button x:Name="b" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedB" IsVisible="False">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                         </OnPlatform>
                     </Button.FontFamily>
                 </Button>
-                <Button x:Name="d" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedD">
+                <Button x:Name="c" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250"  Clicked="Handle_ClickedC" IsVisible="False">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                         </OnPlatform>
                     </Button.FontFamily>
                 </Button>
-                <Button x:Name="f" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedE">
+                <Button x:Name="d" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedD" IsVisible="False">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                         </OnPlatform>
                     </Button.FontFamily>
                 </Button>
-                <Button x:Name="g" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedF">
+                <Button x:Name="f" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedE" IsVisible="False">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                         </OnPlatform>
                     </Button.FontFamily>
                 </Button>
-                <Button x:Name="h" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedG">
+                <Button x:Name="g" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedF" IsVisible="False">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                         </OnPlatform>
                     </Button.FontFamily>
                 </Button>
-                <Button x:Name="i" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedH">
+                <Button x:Name="h" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedG" IsVisible="False">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                         </OnPlatform>
                     </Button.FontFamily>
                 </Button>
-                <Button x:Name="j" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedI">
+                <Button x:Name="i" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedH" IsVisible="False">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                         </OnPlatform>
                     </Button.FontFamily>
                 </Button>
-                <Button x:Name="k" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedJ">
+                <Button x:Name="j" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedI" IsVisible="False">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android" Value="Mairon.ttf#Mairon"/>
                         </OnPlatform>
                     </Button.FontFamily>
                 </Button>
-                <Button x:Name="l" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedK">
+                <Button x:Name="k" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedJ" IsVisible="False">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Button x:Name="l" Text="" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250" Clicked="Handle_ClickedK" IsVisible="False">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <On Platform="Android" Value="Mairon.ttf#Mairon"/>
@@ -89,13 +101,7 @@
                 </Button>
 
 
-                <Button Text="Update Events" Clicked ="Handle_Clicked" HorizontalOptions="Center" BackgroundColor="#d1eefc" WidthRequest="250">
-                    <Button.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
-                        </OnPlatform>
-                    </Button.FontFamily>
-                </Button>
+
                 <Label></Label>
                 <Label></Label>
                 <Label></Label>

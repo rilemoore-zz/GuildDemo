@@ -28,8 +28,8 @@
                 Placeholder="Enter Event Title"
                 PlaceholderColor="#A00000"
                 BackgroundColor="Transparent"
-                MaxLength="500" 
-                WidthRequest="500"
+                MaxLength="300" 
+                WidthRequest="300"
                 />
             <DatePicker x:Name="Datepick" Format="yyyy/dd/mm">
                 
@@ -90,13 +90,6 @@
                     </Button.FontFamily>
                 </Button>
 
-                <Button x:Name="Testbutton" Text="test date time" Clicked="Handle_Clicked2" CornerRadius="50" BackgroundColor="#d1eefc" Opacity="1" WidthRequest="250">
-                    <Button.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="Android" Value="Mairon.ttf#Mairon"/>
-                        </OnPlatform>
-                    </Button.FontFamily>
-                </Button>
             </StackLayout>
 
 
