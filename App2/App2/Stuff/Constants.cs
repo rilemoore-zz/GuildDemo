@@ -13,6 +13,7 @@ namespace App2.Stuff
         public static string SearchUrl = "http://ec2-18-216-89-31.us-east-2.compute.amazonaws.com:8080/search/event";
         public static string CreateUserURL = "http://ec2-18-216-89-31.us-east-2.compute.amazonaws.com:8080/new/user";
         public static string CheckLoginURL = "http://ec2-18-216-89-31.us-east-2.compute.amazonaws.com:8080/confirm/user";
+        public static string ConfirmUserURL = "http://ec2-18-216-89-31.us-east-2.compute.amazonaws.com:8080/get/user";
         public static List<BracketNames> Entrants = new List<BracketNames>();
         public static List<GameEvent> events = new List<GameEvent>();
         public static List<GameEvent> RegisteredEvents = new List<GameEvent>();

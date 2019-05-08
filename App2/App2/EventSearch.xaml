@@ -19,6 +19,7 @@
             </Label>
             <Entry
                 x:Name="EventName"
+                Text=""
                 VerticalOptions="Center"
                 HorizontalOptions="Start"
                 Placeholder="Enter Event Name"
@@ -29,6 +30,7 @@
                 WidthRequest="500" />
             <Entry
                 x:Name="Platform"
+                Text=""
                 VerticalOptions="Center"
                 HorizontalOptions="Start"
                 Placeholder="Enter Platform (PC, Xbox, Tabletop, etc)"
@@ -39,6 +41,7 @@
                 WidthRequest="500" />
             <Entry
                 x:Name="GameName"
+                Text=""
                 VerticalOptions="Center"
                 HorizontalOptions="Start"
                 Placeholder="Enter Game Name"

@@ -21,7 +21,7 @@ namespace App2
             this.BackgroundImage = "smallbackground.png";
             GetEvents();
         }
-
+        public List<UserClass> UserList = new List<UserClass>();
         public IPageAnimation PageAnimation { get; } = new FadePageAnimation { Duration = AnimationDuration.Short, Subtype = AnimationSubtype.FromTop };
 
         public void OnAnimationStarted(bool isPopAnimation)
@@ -91,6 +91,17 @@ namespace App2
         {
             if (Constants.CurrentUser.ID == Constants.events[4].UserId)
             {
+                if (InvitedUser.Text == "")
+                {
+                    await DisplayAlert("Error", "User does not exist", "Ok");
+                    return;
+                }
+                UserList = await App.RestService.GetResponse<List<UserClass>>(Constants.ConfirmUserURL + "/" + InvitedUser.Text);
+                if (UserList[0].UserName == "ERROR" || UserList[0].UserPassword == "ERROR")
+                {
+                    await DisplayAlert("Error", "User does not exist", "Ok");
+                    return;
+                }
                 AttendeeClass newattendee = new AttendeeClass();
                 newattendee.EventID = Constants.events[4].eventId;
                 string myAttendeeList = JsonConvert.SerializeObject(newattendee);

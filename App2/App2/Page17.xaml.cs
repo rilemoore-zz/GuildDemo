@@ -44,13 +44,18 @@ namespace App2
 
         private void Sort(object sender, System.EventArgs e)
         {
+            if(Init0Name.Text == "" || Init0.Text =="" || Init0AC.Text=="" || Init0HP.Text=="" || Init1.Text == "" || Init1AC.Text == "" || Init1HP.Text == "" || Init2.Text == "" || Init2AC.Text == "" || Init2HP.Text == "" || Init3.Text == "" || Init3AC.Text == "" || Init3HP.Text == "" || Init4.Text == "" || Init4AC.Text == "" || Init4HP.Text == "" || Init5.Text == "" || Init5AC.Text == "" || Init5HP.Text == "" || Init6.Text == "" || Init6AC.Text == "" || Init6HP.Text == "" || Init7.Text == "" || Init7AC.Text == "" || Init7HP.Text == "" || Init8.Text == "" || Init8AC.Text == "" || Init8HP.Text == "" || Init9.Text == "" || Init9AC.Text == "" || Init9HP.Text == "" || Init10.Text == "" || Init10AC.Text == "" || Init10HP.Text == "" )
+            {
+                 DisplayAlert("Error", "Please fill in the parameters", "Ok");
+                return;
+            }
             var list = new List<InitiativeClass>();
-            int max = 16;
+            int max = 11;
             /* for(int i = 0; i<8; i++)
              {
                  list.Add(.Text);
              }*/
-             for(int i = 0; i < 16; i++)
+             for(int i = 0; i < 11; i++)
             {
                 list.Add(new InitiativeClass());
             }
@@ -87,21 +92,21 @@ namespace App2
             list[10].name = Init2Name.Text;
             list[10].initiative = Int32.Parse(Init10.Text);
             list[10].AC = Int32.Parse(Init10AC.Text);
-            list[11].name = Init3Name.Text;
-            list[11].initiative = Int32.Parse(Init11.Text);
-            list[11].AC = Int32.Parse(Init11AC.Text);
-            list[12].name = Init4Name.Text;
-            list[12].initiative = Int32.Parse(Init12.Text);
-            list[12].AC = Int32.Parse(Init12AC.Text);
-            list[13].name = Init5Name.Text;
-            list[13].initiative = Int32.Parse(Init13.Text);
-            list[13].AC = Int32.Parse(Init13AC.Text);
-            list[14].name = Init6Name.Text;
-            list[14].initiative = Int32.Parse(Init14.Text);
-            list[14].AC = Int32.Parse(Init14AC.Text);
-            list[15].name = Init7Name.Text;
-            list[15].initiative = Int32.Parse(Init15.Text);
-            list[15].AC = Int32.Parse(Init15AC.Text);
+            //list[11].name = Init3Name.Text;
+            //list[11].initiative = Int32.Parse(Init11.Text);
+            //list[11].AC = Int32.Parse(Init11AC.Text);
+            //list[12].name = Init4Name.Text;
+            //list[12].initiative = Int32.Parse(Init12.Text);
+            //list[12].AC = Int32.Parse(Init12AC.Text);
+            //list[13].name = Init5Name.Text;
+            //list[13].initiative = Int32.Parse(Init13.Text);
+            //list[13].AC = Int32.Parse(Init13AC.Text);
+            //list[14].name = Init6Name.Text;
+            //list[14].initiative = Int32.Parse(Init14.Text);
+            //list[14].AC = Int32.Parse(Init14AC.Text);
+            //list[15].name = Init7Name.Text;
+            //list[15].initiative = Int32.Parse(Init15.Text);
+            //list[15].AC = Int32.Parse(Init15AC.Text);
 
             list[0].HP = Int32.Parse(Init0HP.Text);
             list[1].HP = Int32.Parse(Init1HP.Text);
@@ -114,11 +119,11 @@ namespace App2
             list[8].HP = Int32.Parse(Init8HP.Text);
             list[9].HP = Int32.Parse(Init9HP.Text);
             list[10].HP = Int32.Parse(Init10HP.Text);
-            list[11].HP = Int32.Parse(Init11HP.Text);
-            list[12].HP = Int32.Parse(Init12HP.Text);
-            list[13].HP = Int32.Parse(Init13HP.Text);
-            list[14].HP = Int32.Parse(Init14HP.Text);
-            list[15].HP = Int32.Parse(Init15HP.Text);
+            //list[11].HP = Int32.Parse(Init11HP.Text);
+            //list[12].HP = Int32.Parse(Init12HP.Text);
+            //list[13].HP = Int32.Parse(Init13HP.Text);
+            //list[14].HP = Int32.Parse(Init14HP.Text);
+            //list[15].HP = Int32.Parse(Init15HP.Text);
 
 
             for (int j=0; j<max; j++)
@@ -131,7 +136,7 @@ namespace App2
                 }
             }
             list[0].Sort(list);
-            for (int k = list.Count(); k < 16; k++)
+            for (int k = list.Count(); k < 11; k++)
             {
                 list.Add(new InitiativeClass());
                 list[k].name = "";
@@ -169,16 +174,16 @@ namespace App2
             Init9Name.Text = list[9].name;
             Init10.Text = list[10].initiative.ToString();
             Init10Name.Text = list[10].name;
-            Init11.Text = list[11].initiative.ToString();
-            Init11Name.Text = list[11].name;
-            Init12.Text = list[12].initiative.ToString();
-            Init12Name.Text = list[12].name;
-            Init13.Text = list[13].initiative.ToString();
-            Init13Name.Text = list[13].name;
-            Init14.Text = list[14].initiative.ToString();
-            Init14Name.Text = list[14].name;
-            Init15.Text = list[15].initiative.ToString();
-            Init15Name.Text = list[15].name;
+            //Init11.Text = list[11].initiative.ToString();
+            //Init11Name.Text = list[11].name;
+            //Init12.Text = list[12].initiative.ToString();
+            //Init12Name.Text = list[12].name;
+            //Init13.Text = list[13].initiative.ToString();
+            //Init13Name.Text = list[13].name;
+            //Init14.Text = list[14].initiative.ToString();
+            //Init14Name.Text = list[14].name;
+            //Init15.Text = list[15].initiative.ToString();
+            //Init15Name.Text = list[15].name;
 
             Init0AC.Text = list[0].AC.ToString();
             Init0HP.Text = list[0].HP.ToString();
@@ -213,20 +218,20 @@ namespace App2
             Init10AC.Text = list[10].AC.ToString();
             Init10HP.Text = list[10].HP.ToString();
 
-            Init11AC.Text = list[11].AC.ToString();
-            Init11HP.Text = list[11].HP.ToString();
+            //Init11AC.Text = list[11].AC.ToString();
+            //Init11HP.Text = list[11].HP.ToString();
 
-            Init12AC.Text = list[12].AC.ToString();
-            Init12HP.Text = list[12].HP.ToString();
+            //Init12AC.Text = list[12].AC.ToString();
+            //Init12HP.Text = list[12].HP.ToString();
 
-            Init13AC.Text = list[13].AC.ToString();
-            Init13HP.Text = list[13].HP.ToString();
+            //Init13AC.Text = list[13].AC.ToString();
+            //Init13HP.Text = list[13].HP.ToString();
 
-            Init14AC.Text = list[14].AC.ToString();
-            Init14HP.Text = list[14].HP.ToString();
+            //Init14AC.Text = list[14].AC.ToString();
+            //Init14HP.Text = list[14].HP.ToString();
 
-            Init15AC.Text = list[15].AC.ToString();
-            Init15HP.Text = list[15].HP.ToString();
+            //Init15AC.Text = list[15].AC.ToString();
+            //Init15HP.Text = list[15].HP.ToString();
         }
     }
 }

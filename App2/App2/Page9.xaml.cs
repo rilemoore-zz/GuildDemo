@@ -43,7 +43,11 @@ namespace App2
         async void Handle_Clicked(object sender, System.EventArgs e)
         {
             //if(!Entry_Username.Text.Equals("") && !Entry_Password.Text.Equals(""))
-
+            if(Entry_Username.Text == "" || Entry_Password.Text == "")
+            {
+                await DisplayAlert("Login", "Login Not Correct", "Ok");
+                return;
+            }
             UserClass NewUser = new UserClass();
 
             NewUser.UserName = Entry_Username.Text;
@@ -51,8 +55,14 @@ namespace App2
            // bool LogInSuccess = false;
            // int truefalse;
             UserList = await App.RestService.GetResponse<List<UserClass>>(Constants.CheckLoginURL + "/" + NewUser.UserName +"/" + NewUser.UserPassword);
+            if (UserList[0].UserName == "ERROR" || UserList[0].UserPassword == "ERROR")
+            {
+                await DisplayAlert("Login", "Login Not Correct", "Ok");
+                return;
+            }
             Constants.CurrentUser = UserList[0];
-            if (UserList[0].UserName == Entry_Username.Text)
+
+            if (UserList[0].UserName == Entry_Username.Text && UserList[0].UserPassword == Entry_Password.Text)
             {
                 await Navigation.PushAsync(new Page1());
             }

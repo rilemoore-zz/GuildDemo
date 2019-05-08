@@ -88,7 +88,7 @@
                     <Entry x:Name="Init9" Keyboard="Numeric" Grid.Row="10" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="50"  />
                     <Entry x:Name="Init10Name" Grid.Row="11" Grid.Column="0" Placeholder="Player 11" Text="" WidthRequest="250"/>
                     <Entry x:Name="Init10" Keyboard="Numeric" Grid.Row="11" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="50"  />
-                    <Entry x:Name="Init11Name" Grid.Row="12" Grid.Column="0" Placeholder="Player 12" Text="" WidthRequest="250"/>
+                    <!--<Entry x:Name="Init11Name" Grid.Row="12" Grid.Column="0" Placeholder="Player 12" Text="" WidthRequest="250"/>
                     <Entry x:Name="Init11" Keyboard="Numeric" Grid.Row="12" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="50"  />
                     <Entry x:Name="Init12Name" Grid.Row="13" Grid.Column="0" Placeholder="Player 13" Text="" WidthRequest="250"/>
                     <Entry x:Name="Init12" Keyboard="Numeric" Grid.Row="13" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="50"  />
@@ -97,9 +97,9 @@
                     <Entry x:Name="Init14Name" Grid.Row="15" Grid.Column="0" Placeholder="Player 15" Text="" WidthRequest="250"/>
                     <Entry x:Name="Init14" Keyboard="Numeric" Grid.Row="15" Grid.Column="1" Placeholder="Initiative" Text="0" WidthRequest="50"  />
                 <Entry x:Name="Init15Name" Grid.Row="16" Grid.Column="0" Placeholder="Player 16" Text="" WidthRequest="250"/>
-                    <Entry x:Name="Init15" Keyboard="Numeric" Grid.Row="16" Grid.Column="1" Placeholder="Initiative" Text="0"  WidthRequest="50"  />
-                <Button Grid.Row="17" Grid.Column="0" Text="D20" Clicked="D20"  WidthRequest="250" />
-                <Button Grid.Row="17" Grid.Column="1" Text="Sort" Clicked="Sort"  WidthRequest="250" />
+                    <Entry x:Name="Init15" Keyboard="Numeric" Grid.Row="16" Grid.Column="1" Placeholder="Initiative" Text="0"  WidthRequest="50"  />-->
+                <Button Grid.Row="13" Grid.Column="0" Text="D20" Clicked="D20"  WidthRequest="250" />
+                <Button Grid.Row="13" Grid.Column="1" Text="Sort" Clicked="Sort"  WidthRequest="250" />
                 
                     <Entry x:Name="Init0AC" Keyboard="Numeric" Grid.Row="1" Grid.Column="2" Placeholder="Enter AC" Text="0" WidthRequest="250" />
                     <Entry x:Name="Init1AC" Keyboard="Numeric" Grid.Row="2" Grid.Column="2" Placeholder="Enter AC" Text="0" WidthRequest="250" />
@@ -112,11 +112,11 @@
                     <Entry x:Name="Init8AC" Keyboard="Numeric" Grid.Row="9" Grid.Column="2" Placeholder="Enter AC" Text="0" WidthRequest="250" />
                     <Entry x:Name="Init9AC" Keyboard="Numeric" Grid.Row="10" Grid.Column="2" Placeholder="Enter AC" Text="0" WidthRequest="250" />
                     <Entry x:Name="Init10AC" Keyboard="Numeric" Grid.Row="11" Grid.Column="2" Placeholder="Enter AC" Text="0" WidthRequest="250" />
-                    <Entry x:Name="Init11AC" Keyboard="Numeric" Grid.Row="12" Grid.Column="2" Placeholder="Enter AC" Text="0" WidthRequest="250" />
+                    <!--<Entry x:Name="Init11AC" Keyboard="Numeric" Grid.Row="12" Grid.Column="2" Placeholder="Enter AC" Text="0" WidthRequest="250" />
                     <Entry x:Name="Init12AC" Keyboard="Numeric" Grid.Row="13" Grid.Column="2" Placeholder="Enter AC" Text="0" WidthRequest="250" />
                     <Entry x:Name="Init13AC" Keyboard="Numeric" Grid.Row="14" Grid.Column="2" Placeholder="Enter AC" Text="0" WidthRequest="250" />
                     <Entry x:Name="Init14AC" Keyboard="Numeric" Grid.Row="15" Grid.Column="2" Placeholder="Enter AC" Text="0" WidthRequest="250" />
-                    <Entry x:Name="Init15AC" Keyboard="Numeric" Grid.Row="16" Grid.Column="2" Placeholder="Enter AC" Text="0" WidthRequest="250" />
+                    <Entry x:Name="Init15AC" Keyboard="Numeric" Grid.Row="16" Grid.Column="2" Placeholder="Enter AC" Text="0" WidthRequest="250" />-->
 
                     <Entry x:Name="Init0HP" Keyboard="Numeric" Grid.Row="1" Grid.Column="3" Placeholder="Enter HP" Text="0" WidthRequest="250" />
                     <Entry x:Name="Init1HP" Keyboard="Numeric" Grid.Row="2" Grid.Column="3" Placeholder="Enter HP" Text="0" WidthRequest="250" />
@@ -129,11 +129,11 @@
                     <Entry x:Name="Init8HP" Keyboard="Numeric" Grid.Row="9" Grid.Column="3" Placeholder="Enter HP" Text="0" WidthRequest="250" />
                     <Entry x:Name="Init9HP" Keyboard="Numeric" Grid.Row="10" Grid.Column="3" Placeholder="Enter HP" Text="0" WidthRequest="250" />
                     <Entry x:Name="Init10HP" Keyboard="Numeric" Grid.Row="11" Grid.Column="3" Placeholder="Enter HP" Text="0" WidthRequest="250" />
-                    <Entry x:Name="Init11HP" Keyboard="Numeric" Grid.Row="12" Grid.Column="3" Placeholder="Enter HP" Text="0" WidthRequest="250" />
+                    <!--<Entry x:Name="Init11HP" Keyboard="Numeric" Grid.Row="12" Grid.Column="3" Placeholder="Enter HP" Text="0" WidthRequest="250" />
                     <Entry x:Name="Init12HP" Keyboard="Numeric" Grid.Row="13" Grid.Column="3" Placeholder="Enter HP" Text="0" WidthRequest="250" />
                     <Entry x:Name="Init13HP" Keyboard="Numeric" Grid.Row="14" Grid.Column="3" Placeholder="Enter HP" Text="0" WidthRequest="250" />
                     <Entry x:Name="Init14HP" Keyboard="Numeric" Grid.Row="15" Grid.Column="3" Placeholder="Enter HP" Text="0" WidthRequest="250" />
-                    <Entry x:Name="Init15HP" Keyboard="Numeric" Grid.Row="16" Grid.Column="3" Placeholder="Enter HP" Text="0" WidthRequest="250" />
+                    <Entry x:Name="Init15HP" Keyboard="Numeric" Grid.Row="16" Grid.Column="3" Placeholder="Enter HP" Text="0" WidthRequest="250" />-->
 
 
 

@@ -42,6 +42,11 @@ namespace App2
 
         async void SearchByPlatform(object sender, System.EventArgs e)
         {
+            if(Platform.Text =="")
+            {
+                await DisplayAlert("Error", "Please fill in the the platform field", "Ok");
+                return;
+            }
             Constants.SearchedEvents = await App.RestService.GetResponse<List<GameEvent>>(Constants.SearchUrl +"/platform/" + Platform.Text);
             for (int i = 0; i < Constants.SearchedEvents.Count; i++)
             {
@@ -55,6 +60,11 @@ namespace App2
 
         async void SearchByGameName(object sender, System.EventArgs e)
         {
+            if (GameName.Text == "")
+            {
+                await DisplayAlert("Error", "Please fill in the the Game Name field", "Ok");
+                return;
+            }
             Constants.SearchedEvents = await App.RestService.GetResponse<List<GameEvent>>(Constants.SearchUrl + "/game/" + GameName.Text);
             for (int i = 0; i < Constants.SearchedEvents.Count; i++)
             {
@@ -68,6 +78,11 @@ namespace App2
 
         async void SearchByEventName(object sender, System.EventArgs e)
         {
+            if (EventName.Text == "")
+            {
+                await DisplayAlert("Error", "Please fill in the the Event Name field", "Ok");
+                return;
+            }
             Constants.SearchedEvents = await App.RestService.GetResponse<List<GameEvent>>(Constants.SearchUrl + "/title/" + EventName.Text);
             for (int i = 0; i < Constants.SearchedEvents.Count; i++)
             {

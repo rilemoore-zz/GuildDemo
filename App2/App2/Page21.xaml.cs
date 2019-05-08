@@ -22,7 +22,7 @@ namespace App2
         }
 
         public IPageAnimation PageAnimation { get; } = new FadePageAnimation { Duration = AnimationDuration.Short, Subtype = AnimationSubtype.FromTop };
-
+        public List<UserClass> UserList = new List<UserClass>();
         public void OnAnimationStarted(bool isPopAnimation)
         {
             // Put your code here but leaving empty works just fine
@@ -90,6 +90,17 @@ namespace App2
         {
             if (Constants.CurrentUser.ID == Constants.events[1].UserId)
             {
+                if (InvitedUser.Text == "")
+                {
+                    await DisplayAlert("Error", "User does not exist", "Ok");
+                    return;
+                }
+                UserList = await App.RestService.GetResponse<List<UserClass>>(Constants.ConfirmUserURL + "/" + InvitedUser.Text);
+                if (UserList[0].UserName == "ERROR" || UserList[0].UserPassword == "ERROR")
+                {
+                    await DisplayAlert("Error", "User does not exist", "Ok");
+                    return;
+                }
                 AttendeeClass newattendee = new AttendeeClass();
                 newattendee.EventID = Constants.events[1].eventId;
                 string myAttendeeList = JsonConvert.SerializeObject(newattendee);
